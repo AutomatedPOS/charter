@@ -5,3 +5,4 @@ work/
 scratch/
 CLAUDE.md
 __pycache__/
+build/

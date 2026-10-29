@@ -8,6 +8,10 @@
 5. q runs 1..n per control, rows are in catalog order, status is reviewed or drafted.
 
 Run from the repo root: python checks/check_questions.py ac
+
+`python checks/check_questions.py start-here` checks data/start-here.csv instead:
+no forbidden first word, 35 words max, and every control id in prefills is in the catalog.
+
 Exits 1 if any check fails.
 """
 import csv
@@ -20,7 +24,9 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / 'oscal/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json'
 QUESTIONS = ROOT / 'data/questions'
+START_HERE = ROOT / 'data/start-here.csv'
 COLUMNS = ['control_id', 'q', 'question', 'covers', 'status']
+START_HERE_COLUMNS = ['id', 'task', 'question', 'prefills', 'arc42_chapter']
 STATUSES = {'reviewed', 'drafted'}
 FORBIDDEN_START = {'do', 'does', 'is', 'are', 'has', 'have', 'can', 'will'}
 FORBIDDEN_TEXT = ['organization-defined', '[', 'odp', 'information system']
@@ -63,9 +69,40 @@ def family_controls(family):
     return [c for c in walk(group['controls']) if not withdrawn(c)]
 
 
+def check_start_here():
+    catalog = json.loads(CATALOG.read_text(encoding='utf-8'))['catalog']
+    known = {c['id'] for g in catalog['groups'] for c in walk(g['controls'])}
+    with START_HERE.open(newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        header = reader.fieldnames
+        rows = list(reader)
+    problems = []
+    if header != START_HERE_COLUMNS:
+        problems.append(f'header is {header}, expected {START_HERE_COLUMNS}')
+    for r in rows:
+        tag = r['id']
+        words = r['question'].split()
+        if not words:
+            problems.append(f'{tag}: empty question')
+            continue
+        if words[0].lower().strip(',:') in FORBIDDEN_START:
+            problems.append(f'{tag}: starts with {words[0]!r}')
+        if len(words) > HARD_LIMIT:
+            problems.append(f'{tag}: {len(words)} words')
+        for cid in re.findall(r'\b[a-z]{2}-\d+(?:\.\d+)?\b', r['prefills']):
+            if cid not in known:
+                problems.append(f'{tag}: prefills {cid}, not in the catalog')
+    print(f'start-here: {len(rows)} questions')
+    for p in problems:
+        print(f'  FAIL {p}')
+    sys.exit(1 if problems else 0)
+
+
 def main():
     if len(sys.argv) != 2:
-        sys.exit('usage: python checks/check_questions.py <family>')
+        sys.exit('usage: python checks/check_questions.py <family>|start-here')
+    if sys.argv[1].lower() == 'start-here':
+        check_start_here()
     family = sys.argv[1].lower()
     path = QUESTIONS / f'{family}.csv'
     text = path.read_text(encoding='utf-8')
