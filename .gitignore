@@ -1,0 +1,6 @@
+handoff/
+*.private.md
+.env
+work/
+scratch/
+CLAUDE.md
