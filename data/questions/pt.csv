@@ -19,6 +19,6 @@
 "pt-6.1","1","How often are the published ways this system shares personal data checked against why the data was collected?","pt-6.1_obj","reviewed"
 "pt-6.2","1","Which uses of personal information in this system are exempt from standard notice or access rules, who approved each, and how often are they reviewed?","pt-6.2_obj-1 pt-6.2_obj-2 pt-6.2_obj-3","reviewed"
 "pt-7","1","Which sensitive kinds of personal data, such as health, biometric, or children's data, does this system handle, and what extra conditions apply?","pt-7_obj","reviewed"
-"pt-7.1","1","Where does this system collect or use national ID numbers, such as Social Security numbers, why, what alternatives were considered, and what are people told when asked?","pt-7.1_obj.a-1 pt-7.1_obj.a-2 pt-7.1_obj.b pt-7.1_obj.c-1 pt-7.1_obj.c-2 pt-7.1_obj.c-3","reviewed"
+"pt-7.1","1","Where does this system collect national ID numbers, such as Social Security numbers, why, and what happens to people who decline to give one?","pt-7.1_obj.a-1 pt-7.1_obj.a-2 pt-7.1_obj.b pt-7.1_obj.c-1 pt-7.1_obj.c-2 pt-7.1_obj.c-3","reviewed"
 "pt-7.2","1","How does this system avoid recording how people exercise rights like speech, religion, or assembly, and what exceptions apply?","pt-7.2_obj","reviewed"
 "pt-8","1","Where does this system match personal data against another organization's records, under what agreement, and how are results verified and people notified and allowed to contest them?","pt-8_obj.a pt-8_obj.b-1 pt-8_obj.b-2 pt-8_obj.c pt-8_obj.d pt-8_obj.e-1 pt-8_obj.e-2","reviewed"
