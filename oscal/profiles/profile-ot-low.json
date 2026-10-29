@@ -1,9 +1,9 @@
 {
   "profile": {
-    "uuid": "0b9a8b2c-70ba-4938-9d09-3f3833a66a80",
+    "uuid": "359e2c3a-0d3e-471e-aadc-fa10f91f998b",
     "metadata": {
       "title": "NIST SP 800-53B LOW + SP 800-82r3 OT Overlay — LOW Impact OT Baseline",
-      "last-modified": "2026-10-29T14:55:09.00000-00:00",
+      "last-modified": "2026-10-29T15:02:07.00000-00:00",
       "version": "1.0.0",
       "oscal-version": "1.2.2",
       "props": [
@@ -722,6 +722,20 @@
           ]
         },
         {
+          "control-id": "cp-9",
+          "adds": [
+            {
+              "position": "ending",
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): Testing for reliability and integrity increases confidence that the system can be restored after an incident and minimizes the impact associated with downtime and outages. The ability to test backups is often dependent on the resources needed to appropriately represent the environment, such as the availability of spare devices and testing equipment. Testing backup and restoration on OT is often limited to systems with redundancy or spare equipment. In certain cases, sampling will be limited to those redundant systems. Compensating controls may include alternative methods for testing backups, such as hash or checksum validations."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "control-id": "cp-10",
           "adds": [
             {
@@ -771,7 +785,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts."
+                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts. Control Enhancement (1) (2): As a compensating control, physical access restrictions may sufficiently represent one authentication factor, provided that the system is not remotely accessible."
                 }
               ]
             }
@@ -841,7 +855,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors)."
+                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors). Control Enhancement (2) (4): Example compensating controls include implementing support external to the OT and multi-factor authentication."
                 }
               ]
             }

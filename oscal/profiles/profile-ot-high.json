@@ -1,9 +1,9 @@
 {
   "profile": {
-    "uuid": "84bf8881-397a-46f9-95fe-87522ba98e60",
+    "uuid": "b4cbd34a-a974-46d1-b23b-a011a1214b47",
     "metadata": {
       "title": "NIST SP 800-53B HIGH + SP 800-82r3 OT Overlay — HIGH Impact OT Baseline",
-      "last-modified": "2026-10-29T14:55:09.00000-00:00",
+      "last-modified": "2026-10-29T15:02:07.00000-00:00",
       "version": "1.0.0",
       "oscal-version": "1.2.2",
       "props": [
@@ -550,7 +550,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that access enforcement mechanisms do not adversely impact the operational performance of the OT. Example compensating controls include encapsulation. The policy for logical access control to non-addressable and non-routable system resources and the associated information is made explicit. Access control mechanisms include hardware, firmware, and software that control the device or have device access, such as device drivers and communications controllers. Physical access control may serve as a compensating control for logical access control. However, it may not provide sufficient granularity when users require access to different functions. NOTE FOR HIGH-IMPACT SYSTEMS: AC-3(11): The organization identifies and restricts access to information that could impact the OT environment and accounts for information types that are sensitive, proprietary, contain trade secrets, or support safety functions."
+                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that access enforcement mechanisms do not adversely impact the operational performance of the OT. Example compensating controls include encapsulation. The policy for logical access control to non-addressable and non-routable system resources and the associated information is made explicit. Access control mechanisms include hardware, firmware, and software that control the device or have device access, such as device drivers and communications controllers. Physical access control may serve as a compensating control for logical access control. However, it may not provide sufficient granularity when users require access to different functions. NOTE FOR HIGH-IMPACT SYSTEMS: AC-3(11): The organization identifies and restricts access to information that could impact the OT environment and accounts for information types that are sensitive, proprietary, contain trade secrets, or support safety functions. Rationale for adding AC-3 (11) to HIGH baseline: The loss of availability, integrity, and confidentiality of certain types of information that reside on a high-impact OT system may result in severe or catastrophic adverse effects on operations, assets, or individuals, including severe degradation or loss of mission capability, major damage to organizational assets, or harm to individuals involving the loss of life or life-threatening injuries."
                 }
               ]
             }
@@ -648,7 +648,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): This control assumes a staffed environment where users interact with system displays. This control may be tailored appropriately where systems do not have displays configured, systems are placed in an access-controlled facility or locked enclosure, or immediate operator response is required in emergency situations. Example compensating controls include locating the display in an area with physical access controls that limit access to individuals with permission and need-to-know for the displayed information. Control Enhancement: (1) OT Discussion: Physical protection may be employed to prevent access to a display or the attachment of a display. When the OT cannot conceal displayed information, the organization employs nonautomated mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement (1): Physical protection may be employed to prevent access to a display or the attachment of a display. When the OT cannot conceal displayed information, the organization employs nonautomated mechanisms or procedures as compensating controls in accordance with the general tailoring guidance."
+                  "prose": "OT Discussion (SP 800-82r3): This control assumes a staffed environment where users interact with system displays. This control may be tailored appropriately where systems do not have displays configured, systems are placed in an access-controlled facility or locked enclosure, or immediate operator response is required in emergency situations. Example compensating controls include locating the display in an area with physical access controls that limit access to individuals with permission and need-to-know for the displayed information. Control Enhancement: (1) OT Discussion: Physical protection may be employed to prevent access to a display or the attachment of a display. When the OT cannot conceal displayed information, the organization employs nonautomated mechanisms or procedures as compensating controls in accordance with the general tailoring guidance."
                 }
               ]
             }
@@ -1194,7 +1194,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts."
+                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts. Control Enhancement (1) (2): As a compensating control, physical access restrictions may sufficiently represent one authentication factor, provided that the system is not remotely accessible."
                 }
               ]
             }
@@ -1264,7 +1264,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors)."
+                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors). Control Enhancement (2) (4): Example compensating controls include implementing support external to the OT and multi-factor authentication."
                 }
               ]
             }
@@ -1278,7 +1278,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Identity proofing is likely performed by different departments within the organization. Existing organizational systems (e.g., HR or IT processes) should be leveraged to perform this control. NOTE FOR HIGH-IMPACT SYSTEMS: IA-12(1): Maintenance, engineering, or third-party organizations may require OT access in order to support operations. The organization should determine the AO for proving identity prior to allowing access to the OT environment. Consider obtaining supervisor or sponsor authorization, where the sponsor may be someone within operations. Control Enhancement (2) (3) (4) (5): If the organization already performs these controls, existing organizational processes should be leveraged. For example, HR may provide a system for tracking identity evidence. OT does not need to develop an independent system for achieving this control."
+                  "prose": "OT Discussion (SP 800-82r3): Identity proofing is likely performed by different departments within the organization. Existing organizational systems (e.g., HR or IT processes) should be leveraged to perform this control. NOTE FOR HIGH-IMPACT SYSTEMS: IA-12(1): Maintenance, engineering, or third-party organizations may require OT access in order to support operations. The organization should determine the AO for proving identity prior to allowing access to the OT environment. Consider obtaining supervisor or sponsor authorization, where the sponsor may be someone within operations. Control Enhancement (2) (3) (4) (5): If the organization already performs these controls, existing organizational processes should be leveraged. For example, HR may provide a system for tracking identity evidence. OT does not need to develop an independent system for achieving this control. Rationale for adding IA-12 (1) to HIGH baseline: A supervisor or sponsor should be made aware of any access that an employee has to the OT environment since unauthorized or accidental access could affect the physical process."
                 }
               ]
             }
@@ -1405,6 +1405,20 @@
                 {
                   "name": "guidance",
                   "prose": "OT Discussion (SP 800-82r3): The organization considers OT safety and security interdependencies and access requirements in emergency situations. During an emergency, the organization may restrict access to OT facilities and assets to authorized individuals only. OT systems are often constructed of devices that do not have or cannot use comprehensive access control capabilities due to time restrictive safety constraints. Physical access controls and defense-in-depth measures are used by the organization when necessary and possible to supplement OT security when electronic mechanisms are unable to fulfill the security requirements of the organization’s security plan. Control Enhancement: (1) No OT Discussion for this control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-10",
+          "adds": [
+            {
+              "position": "ending",
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "OT Discussion (SP 800-82r3): It may not be possible or advisable to shut off power to some OT. The organizational-defined parameters for this control should be implemented in consultation with safety and operational personnel. Example compensating controls include failing to a known state and emergency procedures."
                 }
               ]
             }
@@ -1852,7 +1866,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations consider which systems require alternate communication paths to ensure that a loss of communication does not lead to an unacceptable loss of view or control or to a safety event. Rationale for adding SC-47 to HIGH baseline: For continuity of operations during an incident, organizations should consider establishing alternate communications paths for command-and- control purposes to continue to operate and take appropriate actions for high-impact systems when the loss of availability or integrity may result in severe or catastrophic adverse impacts, including impacts to safety and critical service delivery."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations consider which systems require alternate communication paths to ensure that a loss of communication does not lead to an unacceptable loss of view or control or to a safety event. Rationale for adding SC-47 to HIGH baseline: For continuity of operations during an incident, organizations should consider establishing alternate communications paths for command-and-control purposes to continue to operate and take appropriate actions for high-impact systems when the loss of availability or integrity may result in severe or catastrophic adverse impacts, including impacts to safety and critical service delivery."
                 }
               ]
             }
