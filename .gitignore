@@ -4,3 +4,4 @@ handoff/
 work/
 scratch/
 CLAUDE.md
+__pycache__/

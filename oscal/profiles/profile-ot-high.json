@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "b4cbd34a-a974-46d1-b23b-a011a1214b47",
+    "uuid": "b373ce35-4333-4722-ba01-423024b01cd6",
     "metadata": {
       "title": "NIST SP 800-53B HIGH + SP 800-82r3 OT Overlay — HIGH Impact OT Baseline",
-      "last-modified": "2026-10-29T15:22:15.00000-00:00",
-      "version": "1.1.0",
+      "last-modified": "2026-10-29T16:26:35.00000-00:00",
+      "version": "1.2.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -80,20 +80,6 @@
           "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_HIGH-baseline_profile.json",
           "rel": "derived-from",
           "media-type": "application/oscal.profile+json"
-        }
-      ],
-      "parts": [
-        {
-          "id": "ot-overlay-tailoring-considerations",
-          "name": "overview",
-          "title": "OT overlay tailoring considerations (SP 800-82r3 §F.4)",
-          "prose": "The OT overlay in this publication leverages the NIST SP 800-53B control baselines that account for the unique characteristics of OT systems, such as an increased need for availability, safety, and environmental or operating environment considerations. Additionally, OT systems vary widely in their architecture and technology selection. The NIST SP 800-53B control baselines were tailored for these general considerations, including the addition of controls relevant for OT environments. Organizations can use this overlay as a starting point and further tailor controls to meet specific operational needs to address the variability of OT systems. As organizations further tailor controls to meet their internal security requirements, limitations (e.g., technology, operational constraints, environmental considerations) may necessitate the selection of compensating controls. Compensating controls in the OT environment may be required when the OT cannot support certain controls or control enhancements or when the organization determines that it is not advisable to implement controls or control enhancements due to potential adverse impacts to performance, safety, or reliability. Compensating controls are alternatives to a specific baseline control or enhancement that provides equivalent or comparable protection. For example, if controls or control enhancements require automated mechanisms that are not readily available, cost-effective, or technically feasible in OT environments, compensating controls implemented through nonautomated mechanisms or procedures may be acceptable to meet the intent of the control. Compensating controls implemented in accordance with PL-11 from SP 800-53, Rev. 5 are not considered exceptions or waivers to the baseline controls. Rather, they are alternative safeguards and countermeasures employed within the OT environment that accomplish the intent of the original controls that could not be effectively employed. See “Control Tailoring” in Section 3.3 of NIST SP 800-37, Rev. 2 [SP800-37r2]. Using compensating controls may also include control enhancements that supplement the baseline. Using compensating controls typically involves a trade-off between additional risk and reduced functionality. Every use of compensating controls should involve a risk-based determination of how much residual risk to accept and how much functionality to reduce. Additionally, when compensating controls are employed, organizations should document the rationale and describe: • Why the baseline control could not be implemented • How the compensating controls provide equivalent security capabilities for OT systems • The risk acceptance for any residual risk that results from using the compensating controls instead of the baseline control Organizational decisions on the use of compensating controls are documented in the security plan for the OT. Controls that contain assignments (e.g., Assignment: organization-defined conditions or trigger events) may be tailored out of the baseline. This is equivalent to assigning a value of “none.” The assignment may take on different values for different impact baselines."
-        },
-        {
-          "id": "ot-overlay-communication-protocols",
-          "name": "overview",
-          "title": "OT communication protocols (SP 800-82r3 §F.5)",
-          "prose": "The unique network properties within OT may warrant specific attention when applying certain controls. Many of the controls in NIST SP 800-53, Rev. 5 that pertain to communication, devices, and interfaces implicitly assume the applicability of network routing or communication between network segments or zones. Some devices or subsystems used in OT may be configured or architected in a way that may create an exception to this assumption. As a result, controls for devices that communicate using standards and protocols that do not include network addressing generally require tailoring. An RS-232 (serial) interface is an example of a non-network addressable or routable communication method that is commonly employed in OT equipment."
         }
       ]
     },
@@ -505,8 +491,42 @@
           "description": "NIST Special Publication 800-53 Revision 5 catalog",
           "rlinks": [
             {
-              "href": "../nist/sp800-53-rev5/NIST_SP-800-53_rev5_catalog.json",
+              "href": "../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
               "media-type": "application/oscal.catalog+json"
+            }
+          ]
+        },
+        {
+          "uuid": "95af272e-88ba-4619-8c67-d92eb4a1ac10",
+          "title": "OT overlay tailoring considerations (SP 800-82r3 §F.4)",
+          "description": "The OT overlay in this publication leverages the NIST SP 800-53B control baselines that account for the unique characteristics of OT systems, such as an increased need for availability, safety, and environmental or operating environment considerations. Additionally, OT systems vary widely in their architecture and technology selection. The NIST SP 800-53B control baselines were tailored for these general considerations, including the addition of controls relevant for OT environments. Organizations can use this overlay as a starting point and further tailor controls to meet specific operational needs to address the variability of OT systems. As organizations further tailor controls to meet their internal security requirements, limitations (e.g., technology, operational constraints, environmental considerations) may necessitate the selection of compensating controls. Compensating controls in the OT environment may be required when the OT cannot support certain controls or control enhancements or when the organization determines that it is not advisable to implement controls or control enhancements due to potential adverse impacts to performance, safety, or reliability. Compensating controls are alternatives to a specific baseline control or enhancement that provides equivalent or comparable protection. For example, if controls or control enhancements require automated mechanisms that are not readily available, cost-effective, or technically feasible in OT environments, compensating controls implemented through nonautomated mechanisms or procedures may be acceptable to meet the intent of the control. Compensating controls implemented in accordance with PL-11 from SP 800-53, Rev. 5 are not considered exceptions or waivers to the baseline controls. Rather, they are alternative safeguards and countermeasures employed within the OT environment that accomplish the intent of the original controls that could not be effectively employed. See “Control Tailoring” in Section 3.3 of NIST SP 800-37, Rev. 2 [SP800-37r2]. Using compensating controls may also include control enhancements that supplement the baseline. Using compensating controls typically involves a trade-off between additional risk and reduced functionality. Every use of compensating controls should involve a risk-based determination of how much residual risk to accept and how much functionality to reduce. Additionally, when compensating controls are employed, organizations should document the rationale and describe: • Why the baseline control could not be implemented • How the compensating controls provide equivalent security capabilities for OT systems • The risk acceptance for any residual risk that results from using the compensating controls instead of the baseline control Organizational decisions on the use of compensating controls are documented in the security plan for the OT. Controls that contain assignments (e.g., Assignment: organization-defined conditions or trigger events) may be tailored out of the baseline. This is equivalent to assigning a value of “none.” The assignment may take on different values for different impact baselines.",
+          "props": [
+            {
+              "name": "overlay-source",
+              "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+              "value": "sp800-82r3-ot"
+            },
+            {
+              "name": "overlay-overview-id",
+              "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+              "value": "ot-overlay-tailoring-considerations"
+            }
+          ]
+        },
+        {
+          "uuid": "b50d1cef-2321-47c6-8262-8e07c7b52620",
+          "title": "OT communication protocols (SP 800-82r3 §F.5)",
+          "description": "The unique network properties within OT may warrant specific attention when applying certain controls. Many of the controls in NIST SP 800-53, Rev. 5 that pertain to communication, devices, and interfaces implicitly assume the applicability of network routing or communication between network segments or zones. Some devices or subsystems used in OT may be configured or architected in a way that may create an exception to this assumption. As a result, controls for devices that communicate using standards and protocols that do not include network addressing generally require tailoring. An RS-232 (serial) interface is an example of a non-network addressable or routable communication method that is commonly employed in OT equipment.",
+          "props": [
+            {
+              "name": "overlay-source",
+              "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+              "value": "sp800-82r3-ot"
+            },
+            {
+              "name": "overlay-overview-id",
+              "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+              "value": "ot-overlay-communication-protocols"
             }
           ]
         }
@@ -522,7 +542,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems. OT access by vendors and maintenance staff can occur over a large facility footprint or geographic area and into unobserved spaces, such as mechanical or electrical rooms, ceilings, floors, field substations, switch and valve vaults, and pump stations."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems. OT access by vendors and maintenance staff can occur over a large facility footprint or geographic area and into unobserved spaces, such as mechanical or electrical rooms, ceilings, floors, field substations, switch and valve vaults, and pump stations.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -536,7 +563,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): In OT systems, physical security, personnel security, intrusion detection, or auditing measures may support this control objective. Control Enhancement (13): Close coordination occurs between OT, HR, IT, and physical security personnel to ensure the timely removal of high-risk individuals. Control Enhancement (2): When the OT (e.g., field devices) cannot support temporary or emergency accounts, this enhancement does not apply. Example compensating controls include employing nonautomated mechanisms or procedures. Control Enhancement (5): This control enhancement defines situations or timeframes in which users log out of accounts in the policy. Automatic enforcement is not addressed by this control enhancement. Organizations determine whether this control enhancement is appropriate for the mission and/or functions of the OT system and define the timeframe or scenarios. If no timeframe or scenarios apply, the organization-defined parameter reflects as much."
+                  "prose": "OT Discussion (SP 800-82r3): In OT systems, physical security, personnel security, intrusion detection, or auditing measures may support this control objective. Control Enhancement (13): Close coordination occurs between OT, HR, IT, and physical security personnel to ensure the timely removal of high-risk individuals. Control Enhancement (2): When the OT (e.g., field devices) cannot support temporary or emergency accounts, this enhancement does not apply. Example compensating controls include employing nonautomated mechanisms or procedures. Control Enhancement (5): This control enhancement defines situations or timeframes in which users log out of accounts in the policy. Automatic enforcement is not addressed by this control enhancement. Organizations determine whether this control enhancement is appropriate for the mission and/or functions of the OT system and define the timeframe or scenarios. If no timeframe or scenarios apply, the organization-defined parameter reflects as much.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -550,7 +584,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that access enforcement mechanisms do not adversely impact the operational performance of the OT. Example compensating controls include encapsulation. The policy for logical access control to non-addressable and non-routable system resources and the associated information is made explicit. Access control mechanisms include hardware, firmware, and software that control the device or have device access, such as device drivers and communications controllers. Physical access control may serve as a compensating control for logical access control. However, it may not provide sufficient granularity when users require access to different functions. NOTE FOR HIGH-IMPACT SYSTEMS: AC-3(11): The organization identifies and restricts access to information that could impact the OT environment and accounts for information types that are sensitive, proprietary, contain trade secrets, or support safety functions. Rationale for adding AC-3 (11) to HIGH baseline: The loss of availability, integrity, and confidentiality of certain types of information that reside on a high-impact OT system may result in severe or catastrophic adverse effects on operations, assets, or individuals, including severe degradation or loss of mission capability, major damage to organizational assets, or harm to individuals involving the loss of life or life-threatening injuries."
+                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that access enforcement mechanisms do not adversely impact the operational performance of the OT. Example compensating controls include encapsulation. The policy for logical access control to non-addressable and non-routable system resources and the associated information is made explicit. Access control mechanisms include hardware, firmware, and software that control the device or have device access, such as device drivers and communications controllers. Physical access control may serve as a compensating control for logical access control. However, it may not provide sufficient granularity when users require access to different functions. NOTE FOR HIGH-IMPACT SYSTEMS: AC-3(11): The organization identifies and restricts access to information that could impact the OT environment and accounts for information types that are sensitive, proprietary, contain trade secrets, or support safety functions. Rationale for adding AC-3 (11) to HIGH baseline: The loss of availability, integrity, and confidentiality of certain types of information that reside on a high-impact OT system may result in severe or catastrophic adverse effects on operations, assets, or individuals, including severe degradation or loss of mission capability, major damage to organizational assets, or harm to individuals involving the loss of life or life-threatening injuries.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -564,7 +605,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Information flow policy may be achieved using a combination of logical and physical flow restriction techniques. The inspection of message content may enforce information flow policy. For example, industrial OT protocols may be restricted using inbound and outbound traffic rules on a network control device between OT and IT networks. For non-routable communication, such as serial connections, devices may be configured to limit commands to and from specific tags within the OT device. The information flow policy may be supported by labeling or coloring physical connectors to aid in connecting networks. Devices that do not have a business need to communicate should not be connected (i.e., air gapped). Control Enhancement: (4) No OT discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): Information flow policy may be achieved using a combination of logical and physical flow restriction techniques. The inspection of message content may enforce information flow policy. For example, industrial OT protocols may be restricted using inbound and outbound traffic rules on a network control device between OT and IT networks. For non-routable communication, such as serial connections, devices may be configured to limit commands to and from specific tags within the OT device. The information flow policy may be supported by labeling or coloring physical connectors to aid in connecting networks. Devices that do not have a business need to communicate should not be connected (i.e., air gapped). Control Enhancement: (4) No OT discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -578,7 +626,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased personnel security and auditing. The organization carefully considers the appropriateness of a single individual performing multiple critical roles."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased personnel security and auditing. The organization carefully considers the appropriateness of a single individual performing multiple critical roles.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -592,7 +647,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased personnel security and auditing. The organization carefully considers the appropriateness of a single individual having multiple critical privileges. System privilege models may be tailored to enforce integrity and availability (e.g., lower privileges include read access, and higher privileges include write access). Control Enhancement (10): Example compensating controls include enhanced auditing. Control Enhancement (1) (2) (3) (5) (9): When OT components (e.g., PLCs) cannot support the logging of privileged functions, other system components within the authorization boundary may be used (e.g., engineering workstations or physical access monitoring)."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased personnel security and auditing. The organization carefully considers the appropriateness of a single individual having multiple critical privileges. System privilege models may be tailored to enforce integrity and availability (e.g., lower privileges include read access, and higher privileges include write access). Control Enhancement (10): Example compensating controls include enhanced auditing. Control Enhancement (1) (2) (3) (5) (9): When OT components (e.g., PLCs) cannot support the logging of privileged functions, other system components within the authorization boundary may be used (e.g., engineering workstations or physical access monitoring).",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -606,7 +668,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Many OT systems remain in continuous operation, and operators remain logged onto the system at all times. A “log-over” capability may be employed. Example compensating controls include logging or recording all unsuccessful logon attempts and alerting OT security personnel through alarms or other means when the number of organization-defined consecutive invalid access attempts is exceeded. Unsuccessful logon attempt limits are enforced for accounts (e.g., administrator) or systems (e.g., engineering workstations) that are not required for continuous operation."
+                  "prose": "OT Discussion (SP 800-82r3): Many OT systems remain in continuous operation, and operators remain logged onto the system at all times. A “log-over” capability may be employed. Example compensating controls include logging or recording all unsuccessful logon attempts and alerting OT security personnel through alarms or other means when the number of organization-defined consecutive invalid access attempts is exceeded. Unsuccessful logon attempt limits are enforced for accounts (e.g., administrator) or systems (e.g., engineering workstations) that are not required for continuous operation.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -620,7 +689,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Many OT systems must remain in continuous operation, and system use notification may not be supported or effective. Example compensating controls include posting physical notices in OT facilities or providing recurring training on system use prior to permitting access."
+                  "prose": "OT Discussion (SP 800-82r3): Many OT systems must remain in continuous operation, and system use notification may not be supported or effective. Example compensating controls include posting physical notices in OT facilities or providing recurring training on system use prior to permitting access.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -634,7 +710,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The number, account type, and privileges of concurrent sessions consider the roles and responsibilities of the affected individuals. Example compensating controls include providing increased auditing measures."
+                  "prose": "OT Discussion (SP 800-82r3): The number, account type, and privileges of concurrent sessions consider the roles and responsibilities of the affected individuals. Example compensating controls include providing increased auditing measures.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -648,7 +731,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): This control assumes a staffed environment where users interact with system displays. This control may be tailored appropriately where systems do not have displays configured, systems are placed in an access-controlled facility or locked enclosure, or immediate operator response is required in emergency situations. Example compensating controls include locating the display in an area with physical access controls that limit access to individuals with permission and need-to-know for the displayed information. Control Enhancement: (1) OT Discussion: Physical protection may be employed to prevent access to a display or the attachment of a display. When the OT cannot conceal displayed information, the organization employs nonautomated mechanisms or procedures as compensating controls in accordance with the general tailoring guidance."
+                  "prose": "OT Discussion (SP 800-82r3): This control assumes a staffed environment where users interact with system displays. This control may be tailored appropriately where systems do not have displays configured, systems are placed in an access-controlled facility or locked enclosure, or immediate operator response is required in emergency situations. Example compensating controls include locating the display in an area with physical access controls that limit access to individuals with permission and need-to-know for the displayed information. Control Enhancement: (1) OT Discussion: Physical protection may be employed to prevent access to a display or the attachment of a display. When the OT cannot conceal displayed information, the organization employs nonautomated mechanisms or procedures as compensating controls in accordance with the general tailoring guidance.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -662,7 +752,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased auditing measures or limiting remote access privileges to key personnel."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include providing increased auditing measures or limiting remote access privileges to key personnel.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -676,7 +773,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When the OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement (1): Example compensating controls include employing nonautomated mechanisms or procedures as compensating controls. Compensating controls could include limiting remote access to a specified period of time or placing a call from the OT site to the authenticated remote entity. Control Enhancement (2): Encryption-based technologies should be used to support the confidentiality and integrity of remote access sessions. While OT devices often lack the ability to support modern encryption, additional devices (e.g., VPNs) can be added to support these features. This control should not be confused with SC-8 – Transmission Confidentiality and Integrity, which discusses confidentiality and integrity requirements for general communications, including between OT devices. Control Enhancement (3): Example compensating controls include connection specific manual authentication of the remote entity. Control Enhancement (9): Implementation of the remote access disconnect should not impact OT operations. OT personnel should be trained on how to use the remote access disconnect. Rationale for adding AC-17 (9) to LOW, MOD, and HIGH baselines: As more OT systems become accessible remotely, the capability to disconnect or disable remote access is critical to managing risk and may be required to provide stable and safe operations."
+                  "prose": "OT Discussion (SP 800-82r3): When the OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement (1): Example compensating controls include employing nonautomated mechanisms or procedures as compensating controls. Compensating controls could include limiting remote access to a specified period of time or placing a call from the OT site to the authenticated remote entity. Control Enhancement (2): Encryption-based technologies should be used to support the confidentiality and integrity of remote access sessions. While OT devices often lack the ability to support modern encryption, additional devices (e.g., VPNs) can be added to support these features. This control should not be confused with SC-8 – Transmission Confidentiality and Integrity, which discusses confidentiality and integrity requirements for general communications, including between OT devices. Control Enhancement (3): Example compensating controls include connection specific manual authentication of the remote entity. Control Enhancement (9): Implementation of the remote access disconnect should not impact OT operations. OT personnel should be trained on how to use the remote access disconnect. Rationale for adding AC-17 (9) to LOW, MOD, and HIGH baselines: As more OT systems become accessible remotely, the capability to disconnect or disable remote access is critical to managing risk and may be required to provide stable and safe operations.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -690,7 +794,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement: (1) OT Discussion: The implementation of authentication and encryption is driven by the OT environment. If devices and users cannot all be authenticated and encrypted due to operational or technology constraints, compensating controls include providing increased auditing for wireless access, limiting wireless access privileges to key personnel, or using AC-18 (5) to reduce the boundary of wireless access."
+                  "prose": "OT Discussion (SP 800-82r3): When OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement: (1) OT Discussion: The implementation of authentication and encryption is driven by the OT environment. If devices and users cannot all be authenticated and encrypted due to operational or technology constraints, compensating controls include providing increased auditing for wireless access, limiting wireless access privileges to key personnel, or using AC-18 (5) to reduce the boundary of wireless access.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -704,7 +815,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations refine the definition of “external” to reflect lines of authority and responsibility, the granularity of an organization entity, and their relationships. An organization may consider a system to be external if that system performs different functions, implements different policies, falls under different management authorities, or does not provide sufficient visibility into the implementation of controls to allow the establishment of a satisfactory trust relationship. For example, an OT system and a business data processing system may be considered external to each other depending on the organization’s system boundaries. Access to an OT for support by a business partner, such as a vendor or support contractor, is another common example. The definition and trustworthiness of external systems is reexamined with respect to OT functions, purposes, technology, and limitations to establish a clearly documented technical or business case for use and an acceptance of the risk inherent in the use of an external system."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations refine the definition of “external” to reflect lines of authority and responsibility, the granularity of an organization entity, and their relationships. An organization may consider a system to be external if that system performs different functions, implements different policies, falls under different management authorities, or does not provide sufficient visibility into the implementation of controls to allow the establishment of a satisfactory trust relationship. For example, an OT system and a business data processing system may be considered external to each other depending on the organization’s system boundaries. Access to an OT for support by a business partner, such as a vendor or support contractor, is another common example. The definition and trustworthiness of external systems is reexamined with respect to OT functions, purposes, technology, and limitations to establish a clearly documented technical or business case for use and an acceptance of the risk inherent in the use of an external system.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -718,7 +836,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Generally, public access to OT systems is not permitted. Select information may be transferred to a publicly accessible system, possibly with added controls. The organization should review what information is being made accessible prior to publication."
+                  "prose": "OT Discussion (SP 800-82r3): Generally, public access to OT systems is not permitted. Select information may be transferred to a publicly accessible system, possibly with added controls. The organization should review what information is being made accessible prior to publication.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -732,7 +857,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -746,7 +878,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Security awareness training includes initial and periodic review of OT-specific policies, standard operating procedures, security trends, and vulnerabilities. The OT security awareness program is consistent with the requirements of the security awareness and training policy established by the organization. Control Enhancement (4): Identify and communicate suspicious and anomalous behaviors within the OT environment. Some examples of OT suspicious or anomalous behavior may include a PLC still in programming mode when it is expected to be in run mode, process trips with an undetermined root cause, malware on an HMI, unexpected mouse movement, or process changes that are not being performed by the operator."
+                  "prose": "OT Discussion (SP 800-82r3): Security awareness training includes initial and periodic review of OT-specific policies, standard operating procedures, security trends, and vulnerabilities. The OT security awareness program is consistent with the requirements of the security awareness and training policy established by the organization. Control Enhancement (4): Identify and communicate suspicious and anomalous behaviors within the OT environment. Some examples of OT suspicious or anomalous behavior may include a PLC still in programming mode when it is expected to be in run mode, process trips with an undetermined root cause, malware on an HMI, unexpected mouse movement, or process changes that are not being performed by the operator.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -760,7 +899,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Security training includes initial and periodic review of OT-specific policies, standard operating procedures, security trends, and vulnerabilities. The OT security training program is consistent with the requirements of the security awareness and training policy established by the organization. The training may be customized for specific OT roles, which could include operators, maintainers, engineers, supervisors, and administrators."
+                  "prose": "OT Discussion (SP 800-82r3): Security training includes initial and periodic review of OT-specific policies, standard operating procedures, security trends, and vulnerabilities. The OT security training program is consistent with the requirements of the security awareness and training policy established by the organization. The training may be customized for specific OT roles, which could include operators, maintainers, engineers, supervisors, and administrators.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -774,7 +920,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -788,7 +941,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations may want to include relevant OT events (e.g., alerts, alarms, configuration and status changes, operator actions) in their event logging, which may be designated as audit events."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations may want to include relevant OT events (e.g., alerts, alarms, configuration and status changes, operator actions) in their event logging, which may be designated as audit events.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -802,7 +962,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding AU-4 (1) to LOW, MOD, and HIGH baselines: Organizational requirements may require the storage of very large amounts of data, which OT components may not be able to support directly."
+                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding AU-4 (1) to LOW, MOD, and HIGH baselines: Organizational requirements may require the storage of very large amounts of data, which OT components may not be able to support directly.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -816,7 +983,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): Example compensating controls include manual mechanisms or procedures. For devices where audit records cannot be feasibly collected, periodic manual review may be necessary."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): Example compensating controls include manual mechanisms or procedures. For devices where audit records cannot be feasibly collected, periodic manual review may be necessary.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -830,7 +1004,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include using a separate system designated as an authoritative time source. See related control SC-45."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include using a separate system designated as an authoritative time source. See related control SC-45.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -844,7 +1025,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): OT devices may not enforce non-repudiation of audit records and may require compensating controls. Example compensating controls include physical security systems, cameras to monitor user access, or a separate device for log collection."
+                  "prose": "OT Discussion (SP 800-82r3): OT devices may not enforce non-repudiation of audit records and may require compensating controls. Example compensating controls include physical security systems, cameras to monitor user access, or a separate device for log collection.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -858,7 +1046,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: AU-12(1): Example compensating controls include providing time-correlated audit records on a separate system. AU-12(3): Example compensating controls include employing nonautomated mechanisms or procedures."
+                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: AU-12(1): Example compensating controls include providing time-correlated audit records on a separate system. AU-12(3): Example compensating controls include employing nonautomated mechanisms or procedures.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -872,7 +1067,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -886,7 +1088,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Assessments are performed and documented by qualified assessors (i.e., experienced in assessing OT) authorized by the organization. The individual or group conducting the assessment fully understands the organizational information security policies and procedures, the OT security policies and procedures, and the specific health, safety, and environmental risks associated with a particular facility and/or process. The organization ensures that the assessment does not affect system operation or result in unintentional system modification. If assessment activities must be performed on the production OT, it may need to be taken offline before an assessment can be conducted, or the assessment should be scheduled to occur during planned OT outages whenever possible. NOTE FOR HIGH-IMPACT SYSTEMS: CA-2(2): The organization conducts risk analysis to support the selection of an assessment target (e.g., the live system, an offline replica, or lab system)."
+                  "prose": "OT Discussion (SP 800-82r3): Assessments are performed and documented by qualified assessors (i.e., experienced in assessing OT) authorized by the organization. The individual or group conducting the assessment fully understands the organizational information security policies and procedures, the OT security policies and procedures, and the specific health, safety, and environmental risks associated with a particular facility and/or process. The organization ensures that the assessment does not affect system operation or result in unintentional system modification. If assessment activities must be performed on the production OT, it may need to be taken offline before an assessment can be conducted, or the assessment should be scheduled to occur during planned OT outages whenever possible. NOTE FOR HIGH-IMPACT SYSTEMS: CA-2(2): The organization conducts risk analysis to support the selection of an assessment target (e.g., the live system, an offline replica, or lab system).",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -900,7 +1109,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations perform risk-benefit analysis to determine whether an OT should be connected to other systems. The authorizing official (AO) fully understands the organizational information security policies and procedures; the OT security policies and procedures; the risks to organizational operations and assets, individuals, other organizations, and the Nation associated with the connection to other systems; the individuals and organizations that operate and maintain the systems, including maintenance contractors or service providers; and the specific health, safety, and environmental risks associated with a particular interconnection. Connections from the OT environment to other security zones may cross the authorization boundary such that two different authorizing officials may be required to approve the connection. Decisions to accept risk are documented."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations perform risk-benefit analysis to determine whether an OT should be connected to other systems. The authorizing official (AO) fully understands the organizational information security policies and procedures; the OT security policies and procedures; the risks to organizational operations and assets, individuals, other organizations, and the Nation associated with the connection to other systems; the individuals and organizations that operate and maintain the systems, including maintenance contractors or service providers; and the specific health, safety, and environmental risks associated with a particular interconnection. Connections from the OT environment to other security zones may cross the authorization boundary such that two different authorizing officials may be required to approve the connection. Decisions to accept risk are documented.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -914,7 +1130,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Corrective actions identified in assessments may not be immediately actionable in an OT environment. Therefore, short-term mitigations may be implemented to reduce risk as part of the gap closure plan or plan of action and milestones."
+                  "prose": "OT Discussion (SP 800-82r3): Corrective actions identified in assessments may not be immediately actionable in an OT environment. Therefore, short-term mitigations may be implemented to reduce risk as part of the gap closure plan or plan of action and milestones.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -928,7 +1151,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Continuous monitoring programs for OT are designed, documented, and implemented with input from OT personnel. The organization ensures that continuous monitoring does not interfere with OT functions. The individual or group designing and conducting the continuous monitoring for the OT systems implements a monitoring program that is consistent with the organizational information security policies and procedures, the OT security policies and procedures, and the specific health, safety, and environmental risks associated with a particular facility and/or process. Continuous monitoring can be automated or manual at a frequency sufficient to support risk-based decisions. For example, the organization may monitor event logs manually on a specified frequency less often for lower-risk, isolated systems than for higher-risk, networked systems."
+                  "prose": "OT Discussion (SP 800-82r3): Continuous monitoring programs for OT are designed, documented, and implemented with input from OT personnel. The organization ensures that continuous monitoring does not interfere with OT functions. The individual or group designing and conducting the continuous monitoring for the OT systems implements a monitoring program that is consistent with the organizational information security policies and procedures, the OT security policies and procedures, and the specific health, safety, and environmental risks associated with a particular facility and/or process. Continuous monitoring can be automated or manual at a frequency sufficient to support risk-based decisions. For example, the organization may monitor event logs manually on a specified frequency less often for lower-risk, isolated systems than for higher-risk, networked systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -942,7 +1172,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Penetration testing is used with care on OT networks to ensure that OT functions are not adversely impacted by the testing process. In general, OT systems are highly sensitive to timing constraints and have limited resources. Example compensating controls include employing a replicated, virtualized, or simulated system to conduct penetration testing. Production OT may need to be taken offline before testing can be conducted. If OT systems are taken offline for testing, tests are scheduled to occur during planned OT outages whenever possible. If penetration testing is performed on non-OT networks, extra care is taken to ensure that tests do not propagate into the OT network. Rationale for removing CA-8 (1) from HIGH baseline: Specific expertise is necessary to conduct effective penetration testing on OT systems, and it may not be feasible to identify independent personnel with the appropriate skillset or knowledge to perform penetration testing on an OT environment. While an independent penetration test agent or team is recommended, it may not be feasible for all high-impact OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): Penetration testing is used with care on OT networks to ensure that OT functions are not adversely impacted by the testing process. In general, OT systems are highly sensitive to timing constraints and have limited resources. Example compensating controls include employing a replicated, virtualized, or simulated system to conduct penetration testing. Production OT may need to be taken offline before testing can be conducted. If OT systems are taken offline for testing, tests are scheduled to occur during planned OT outages whenever possible. If penetration testing is performed on non-OT networks, extra care is taken to ensure that tests do not propagate into the OT network. Rationale for removing CA-8 (1) from HIGH baseline: Specific expertise is necessary to conduct effective penetration testing on OT systems, and it may not be feasible to identify independent personnel with the appropriate skillset or knowledge to perform penetration testing on an OT environment. While an independent penetration test agent or team is recommended, it may not be feasible for all high-impact OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -956,7 +1193,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations perform risk-benefit analysis to determine whether OT equipment should be connected to other internal system components and then document those connections. The AO fully understands the potential risks associated with approving individual connections or approving a class of components to be connected. For example, the AO may broadly approve the connection of any sensors limited to 4 to 20 milliamp (mA) communication, while other connection types (e.g., serial or Ethernet) require individual approval. Decisions to accept risk are documented."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations perform risk-benefit analysis to determine whether OT equipment should be connected to other internal system components and then document those connections. The AO fully understands the potential risks associated with approving individual connections or approving a class of components to be connected. For example, the AO may broadly approve the connection of any sensors limited to 4 to 20 milliamp (mA) communication, while other connection types (e.g., serial or Ethernet) require individual approval. Decisions to accept risk are documented.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -970,7 +1214,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -984,7 +1235,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Configuration change control procedures should align with the organization’s management of change practices."
+                  "prose": "OT Discussion (SP 800-82r3): Configuration change control procedures should align with the organization’s management of change practices.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -998,7 +1256,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization considers OT safety and security interdependencies. OT security and safety personnel are included in change process management if the change to the system may impact safety or security."
+                  "prose": "OT Discussion (SP 800-82r3): The organization considers OT safety and security interdependencies. OT security and safety personnel are included in change process management if the change to the system may impact safety or security.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1012,7 +1277,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Some OT devices allow for the configuration and use of mode change switches. Where available, these should be used to prevent unauthorized changes. For example, many PLCs have key switches that allow the device to be placed in a programming mode or a running mode. Those PLCs should be placed in a running or remote mode to prevent unauthorized programming changes, and the key should be removed from the key switch and managed appropriately."
+                  "prose": "OT Discussion (SP 800-82r3): Some OT devices allow for the configuration and use of mode change switches. Where available, these should be used to prevent unauthorized changes. For example, many PLCs have key switches that allow the device to be placed in a programming mode or a running mode. Those PLCs should be placed in a running or remote mode to prevent unauthorized programming changes, and the key should be removed from the key switch and managed appropriately.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1026,7 +1298,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization implements least functionality by allowing only the specified functions, protocols, and/or services required for OT operations. For non-routable protocols, such as serial communications, interrupts could be disabled or set points could be made read only except for privileged users to limit functionality. Ports are part of the address space in network protocols and are often associated with specific protocols or functions. For routable protocols, ports can be disabled on many networking devices to limit functionality to the minimum required for operation. Control Enhancement (5): The set of applications that run in OT is relatively static, making allowlisting practical. DHS recommends using application allowlisting for OT equipment."
+                  "prose": "OT Discussion (SP 800-82r3): The organization implements least functionality by allowing only the specified functions, protocols, and/or services required for OT operations. For non-routable protocols, such as serial communications, interrupts could be disabled or set points could be made read only except for privileged users to limit functionality. Ports are part of the address space in network protocols and are often associated with specific protocols or functions. For routable protocols, ports can be disabled on many networking devices to limit functionality to the minimum required for operation. Control Enhancement (5): The set of applications that run in OT is relatively static, making allowlisting practical. DHS recommends using application allowlisting for OT equipment.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1040,7 +1319,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Configuration management plans apply to the internal and external (e.g., contractors, integrators) resources responsible for device configuration."
+                  "prose": "OT Discussion (SP 800-82r3): Configuration management plans apply to the internal and external (e.g., contractors, integrators) resources responsible for device configuration.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1054,7 +1340,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations identify specific information types or components to track where information is being processed and stored. Information to consider in the OT environment may include shared account passwords, PLC backup files, detailed network drawings, and risk assessments that identify specific threats with the environment."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations identify specific information types or components to track where information is being processed and stored. Information to consider in the OT environment may include shared account passwords, PLC backup files, detailed network drawings, and risk assessments that identify specific threats with the environment.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1068,7 +1361,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1082,7 +1382,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization defines contingency plans for categories of disruptions or failures. In the case of a contingency, the OT equipment executes preprogrammed functions, such as alerting the operator of the failure and then doing nothing, alerting the operator and then safely shutting down the industrial process, or alerting the operator and then maintaining the last operational setting prior to failure. Contingency plans for widespread disruption may involve specialized organizations (e.g., FEMA, emergency services, regulatory authorities). Control Enhancement: (1) (2) (3) (5) (8) No OT Discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): The organization defines contingency plans for categories of disruptions or failures. In the case of a contingency, the OT equipment executes preprogrammed functions, such as alerting the operator of the failure and then doing nothing, alerting the operator and then safely shutting down the industrial process, or alerting the operator and then maintaining the last operational setting prior to failure. Contingency plans for widespread disruption may involve specialized organizations (e.g., FEMA, emergency services, regulatory authorities). Control Enhancement: (1) (2) (3) (5) (8) No OT Discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1096,7 +1403,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: CP-4(2): Not all systems will have alternate processing sites, as discussed in CP-7."
+                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: CP-4(2): Not all systems will have alternate processing sites, as discussed in CP-7.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1110,7 +1424,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Many site-wide supervisory or optimization servers (i.e., Level 3 and above of the Purdue model) can be supported from an alternate processing site. It is likely not feasible for control systems or field devices, such as sensors or final elements (i.e., Level 1 and 0 of the Purdue model), to be made available from an alternate processing site. Control Enhancement: (1) (2) (3) (4) No OT Discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): Many site-wide supervisory or optimization servers (i.e., Level 3 and above of the Purdue model) can be supported from an alternate processing site. It is likely not feasible for control systems or field devices, such as sensors or final elements (i.e., Level 1 and 0 of the Purdue model), to be made available from an alternate processing site. Control Enhancement: (1) (2) (3) (4) No OT Discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1124,7 +1445,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Quality of service factors for OT include latency and throughput."
+                  "prose": "OT Discussion (SP 800-82r3): Quality of service factors for OT include latency and throughput.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1138,7 +1466,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1) (2): Testing for reliability and integrity increases confidence that the system can be restored after an incident and minimizes the impact associated with downtime and outages. The ability to test backups is often dependent on the resources needed to appropriately represent the environment, such as the availability of spare devices and testing equipment. Testing backup and restoration on OT is often limited to systems with redundancy or spare equipment. In certain cases, sampling will be limited to those redundant systems. Compensating controls may include alternative methods for testing backups, such as hash or checksum validations."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1) (2): Testing for reliability and integrity increases confidence that the system can be restored after an incident and minimizes the impact associated with downtime and outages. The ability to test backups is often dependent on the resources needed to appropriately represent the environment, such as the availability of spare devices and testing equipment. Testing backup and restoration on OT is often limited to systems with redundancy or spare equipment. In certain cases, sampling will be limited to those redundant systems. Compensating controls may include alternative methods for testing backups, such as hash or checksum validations.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1152,7 +1487,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Reconstitution of the OT includes considering whether system state variables should be restored to initial values or the values before disruption (e.g., are valves restored to full open, full closed, or settings prior to disruption). Restoring system state variables may be disruptive to ongoing physical processes (e.g., valves initially closed may adversely affect system cooling). Control Enhancement (6): Organizations should consider recovery and reconstitution timeframes when storing spare equipment, including environmental hazards that could damage the equipment. Storage locations and environments should be chosen appropriately for the type of backup equipment."
+                  "prose": "OT Discussion (SP 800-82r3): Reconstitution of the OT includes considering whether system state variables should be restored to initial values or the values before disruption (e.g., are valves restored to full open, full closed, or settings prior to disruption). Restoring system state variables may be disruptive to ongoing physical processes (e.g., valves initially closed may adversely affect system cooling). Control Enhancement (6): Organizations should consider recovery and reconstitution timeframes when storing spare equipment, including environmental hazards that could damage the equipment. Storage locations and environments should be chosen appropriately for the type of backup equipment.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1166,7 +1508,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding CP-12 to LOW, MOD, and HIGH baselines: This control provides a framework for the organization to plan its policy and procedures for dealing with IT and OT conditions beyond its control in the environment of operations to minimize potential safety and environmental impacts."
+                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding CP-12 to LOW, MOD, and HIGH baselines: This control provides a framework for the organization to plan its policy and procedures for dealing with IT and OT conditions beyond its control in the environment of operations to minimize potential safety and environmental impacts.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1180,7 +1529,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1194,7 +1550,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts. Control Enhancement (1) (2): As a compensating control, physical access restrictions may sufficiently represent one authentication factor, provided that the system is not remotely accessible."
+                  "prose": "OT Discussion (SP 800-82r3): When shared accounts are required, compensating controls include providing increased physical security, personnel security, and auditing measures. For certain OT, the capability for immediate operator interaction is critical. Local emergency actions for OT are not hampered by identification or authentication requirements. Access to these systems may be restricted by appropriate physical controls. Control Enhancement (12): The acceptance of PIV credentials is only required for federal organizations, as defined by OMB Memorandum M-19-17 [OMB-M1917]. Non federal organizations should refer to IA-2 (1) (2) for guidance on multi-factor authentication credentials. Furthermore, many OT systems do not have the ability to accept PIV credentials and will require compensating controls. NOTE FOR HIGH-IMPACT SYSTEMS: IA-2(5): For local access, physical access controls and logging may be used as an alternative to individual authentication on an OT system. For remote access, the remote access authentication mechanism will be used to identify, permit, and log individual access before permitting the use of shared accounts. Control Enhancement (1) (2): As a compensating control, physical access restrictions may sufficiently represent one authentication factor, provided that the system is not remotely accessible.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1208,7 +1571,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): OT devices may not inherently support device authentication. If devices are local to one another, physical security measures that prevent unauthorized communication between devices can be used as compensating controls. For remote communication, additional hardware may be required to meet authentication requirements."
+                  "prose": "OT Discussion (SP 800-82r3): OT devices may not inherently support device authentication. If devices are local to one another, physical security measures that prevent unauthorized communication between devices can be used as compensating controls. For remote communication, additional hardware may be required to meet authentication requirements.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1222,7 +1592,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (4): This control enhancement is typically implemented by the organization rather than at the system level. However, to manage risk for certain OT environments, identifiers (e.g., badges) may have different markings to indicate the status of individuals, such as contractors, foreign nationals, and non-organizational users."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (4): This control enhancement is typically implemented by the organization rather than at the system level. However, to manage risk for certain OT environments, identifiers (e.g., badges) may have different markings to indicate the status of individuals, such as contractors, foreign nationals, and non-organizational users.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1236,7 +1613,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include physical access control and encapsulating the OT to provide authentication external to the OT. Control Enhancement: (1) (2) (6) No OT Discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include physical access control and encapsulating the OT to provide authentication external to the OT. Control Enhancement: (1) (2) (6) No OT Discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1250,7 +1634,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): This control assumes a visual interface that provides feedback about authentication information during the authentication process. When OT authentication uses an interface that does not support visual feedback (e.g., protocol-based authentication), this control may be tailored out."
+                  "prose": "OT Discussion (SP 800-82r3): This control assumes a visual interface that provides feedback about authentication information during the authentication process. When OT authentication uses an interface that does not support visual feedback (e.g., protocol-based authentication), this control may be tailored out.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1264,7 +1655,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors). Control Enhancement (2) (4): Example compensating controls include implementing support external to the OT and multi-factor authentication."
+                  "prose": "OT Discussion (SP 800-82r3): The OT Discussion for IA-2, Identification and Authentication (Organizational Users) is applicable for non-organizational users. Control Enhancement (1): Acceptance of PIV credentials is only required for organizations that follow OMB Memorandum M-19-17 [OMB-M1917] (e.g., federal agencies and contractors). Control Enhancement (2) (4): Example compensating controls include implementing support external to the OT and multi-factor authentication.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1278,7 +1676,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Identity proofing is likely performed by different departments within the organization. Existing organizational systems (e.g., HR or IT processes) should be leveraged to perform this control. NOTE FOR HIGH-IMPACT SYSTEMS: IA-12(1): Maintenance, engineering, or third-party organizations may require OT access in order to support operations. The organization should determine the AO for proving identity prior to allowing access to the OT environment. Consider obtaining supervisor or sponsor authorization, where the sponsor may be someone within operations. Control Enhancement (2) (3) (4) (5): If the organization already performs these controls, existing organizational processes should be leveraged. For example, HR may provide a system for tracking identity evidence. OT does not need to develop an independent system for achieving this control. Rationale for adding IA-12 (1) to HIGH baseline: A supervisor or sponsor should be made aware of any access that an employee has to the OT environment since unauthorized or accidental access could affect the physical process."
+                  "prose": "OT Discussion (SP 800-82r3): Identity proofing is likely performed by different departments within the organization. Existing organizational systems (e.g., HR or IT processes) should be leveraged to perform this control. NOTE FOR HIGH-IMPACT SYSTEMS: IA-12(1): Maintenance, engineering, or third-party organizations may require OT access in order to support operations. The organization should determine the AO for proving identity prior to allowing access to the OT environment. Consider obtaining supervisor or sponsor authorization, where the sponsor may be someone within operations. Control Enhancement (2) (3) (4) (5): If the organization already performs these controls, existing organizational processes should be leveraged. For example, HR may provide a system for tracking identity evidence. OT does not need to develop an independent system for achieving this control. Rationale for adding IA-12 (1) to HIGH baseline: A supervisor or sponsor should be made aware of any access that an employee has to the OT environment since unauthorized or accidental access could affect the physical process.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1292,7 +1697,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1306,7 +1718,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): As part of the incident handling capability, the organization coordinates with external vendors, integrators, or suppliers as necessary to ensure that they have the capability to address events that are specific to embedded components and devices."
+                  "prose": "OT Discussion (SP 800-82r3): As part of the incident handling capability, the organization coordinates with external vendors, integrators, or suppliers as necessary to ensure that they have the capability to address events that are specific to embedded components and devices.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1320,7 +1739,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization should report incidents on a timely basis. CISA collaborates with international and private-sector computer emergency response teams (CERTs) to share control systems-related security incidents and mitigation measures. Control Enhancement (1): The automated mechanisms used to support the incident reporting process are not necessarily part of or connected to the OT."
+                  "prose": "OT Discussion (SP 800-82r3): The organization should report incidents on a timely basis. CISA collaborates with international and private-sector computer emergency response teams (CERTs) to share control systems-related security incidents and mitigation measures. Control Enhancement (1): The automated mechanisms used to support the incident reporting process are not necessarily part of or connected to the OT.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1334,7 +1760,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1348,7 +1781,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: MA-4(3): The organization may need access to nonlocal maintenance and diagnostic services in order to restore essential OT operations or services. Example compensating controls include limiting the extent of the maintenance and diagnostic services to the minimum essential activities and carefully monitoring and auditing the nonlocal maintenance and diagnostic activities."
+                  "prose": "OT Discussion (SP 800-82r3): NOTE FOR HIGH-IMPACT SYSTEMS: MA-4(3): The organization may need access to nonlocal maintenance and diagnostic services in order to restore essential OT operations or services. Example compensating controls include limiting the extent of the maintenance and diagnostic services to the minimum essential activities and carefully monitoring and auditing the nonlocal maintenance and diagnostic activities.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1362,7 +1802,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations identify OT systems and system components with specific calibration, maintenance, or other requirements and limit maintenance to specific facilities. Some examples may include safety-critical systems or systems involved in custody transfer where accuracy tolerances are limited and additional quality control checks are required. Rationale for adding MA-7 to LOW, MOD, and HIGH baselines: Some OT equipment have specific requirements for calibration, maintenance, and modification to meet regulatory or safety standards. Different deployed locations may impact the quality and precision of field maintenance."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations identify OT systems and system components with specific calibration, maintenance, or other requirements and limit maintenance to specific facilities. Some examples may include safety-critical systems or systems involved in custody transfer where accuracy tolerances are limited and additional quality control checks are required. Rationale for adding MA-7 to LOW, MOD, and HIGH baselines: Some OT equipment have specific requirements for calibration, maintenance, and modification to meet regulatory or safety standards. Different deployed locations may impact the quality and precision of field maintenance.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1376,7 +1823,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1390,7 +1844,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems. The OT components can be distributed over a large facility footprint or geographic area and can be an entry point into the entire organizational network OT. Regulatory controls may also apply."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems. The OT components can be distributed over a large facility footprint or geographic area and can be an entry point into the entire organizational network OT. Regulatory controls may also apply.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1404,7 +1865,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization considers OT safety and security interdependencies and access requirements in emergency situations. During an emergency, the organization may restrict access to OT facilities and assets to authorized individuals only. OT systems are often constructed of devices that do not have or cannot use comprehensive access control capabilities due to time restrictive safety constraints. Physical access controls and defense-in-depth measures are used by the organization when necessary and possible to supplement OT security when electronic mechanisms are unable to fulfill the security requirements of the organization’s security plan. Control Enhancement: (1) No OT Discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): The organization considers OT safety and security interdependencies and access requirements in emergency situations. During an emergency, the organization may restrict access to OT facilities and assets to authorized individuals only. OT systems are often constructed of devices that do not have or cannot use comprehensive access control capabilities due to time restrictive safety constraints. Physical access controls and defense-in-depth measures are used by the organization when necessary and possible to supplement OT security when electronic mechanisms are unable to fulfill the security requirements of the organization’s security plan. Control Enhancement: (1) No OT Discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1418,7 +1886,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): It may not be possible or advisable to shut off power to some OT. The organizational-defined parameters for this control should be implemented in consultation with safety and operational personnel. Example compensating controls include failing to a known state and emergency procedures."
+                  "prose": "OT Discussion (SP 800-82r3): It may not be possible or advisable to shut off power to some OT. The organizational-defined parameters for this control should be implemented in consultation with safety and operational personnel. Example compensating controls include failing to a known state and emergency procedures.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1432,7 +1907,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Fire suppression mechanisms should take the OT environment into account (e.g., water sprinkler systems could be hazardous in specific environments)."
+                  "prose": "OT Discussion (SP 800-82r3): Fire suppression mechanisms should take the OT environment into account (e.g., water sprinkler systems could be hazardous in specific environments).",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1446,7 +1928,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Temperature and humidity controls are typically components of other OT systems (e.g., HVAC, process, or lighting systems) or can be a stand-alone and unique OT system. OT can operate in extreme environments and both interior and exterior locations. For a specific OT, the temperature and humidity design and operational parameters dictate the performance specifications. Power circuits, distribution closets, routers, and switches that support fire protection and life safety systems must be maintained at the proper temperature and humidity. When environmental controls cannot be implemented, use hardware that is engineered to withstand the OT’s unique environmental hazards."
+                  "prose": "OT Discussion (SP 800-82r3): Temperature and humidity controls are typically components of other OT systems (e.g., HVAC, process, or lighting systems) or can be a stand-alone and unique OT system. OT can operate in extreme environments and both interior and exterior locations. For a specific OT, the temperature and humidity design and operational parameters dictate the performance specifications. Power circuits, distribution closets, routers, and switches that support fire protection and life safety systems must be maintained at the proper temperature and humidity. When environmental controls cannot be implemented, use hardware that is engineered to withstand the OT’s unique environmental hazards.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1460,7 +1949,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Water damage protection and the use of shutoff and isolation valves are procedural actions and specific types of OT. OT used in the manufacturing, hydropower, transportation/navigation, water, and wastewater industries rely on the movement of water and are specifically designed to manage the quantity, flow, and pressure of water. Power circuits, distribution closets, routers, and switches that support fire protection and life safety systems should ensure that water will not disable the system (e.g., a fire that activates the sprinkler system does not spray onto the fire control servers, routers, or switches or short out the alarms, egress systems, emergency lighting, or suppression systems)."
+                  "prose": "OT Discussion (SP 800-82r3): Water damage protection and the use of shutoff and isolation valves are procedural actions and specific types of OT. OT used in the manufacturing, hydropower, transportation/navigation, water, and wastewater industries rely on the movement of water and are specifically designed to manage the quantity, flow, and pressure of water. Power circuits, distribution closets, routers, and switches that support fire protection and life safety systems should ensure that water will not disable the system (e.g., a fire that activates the sprinkler system does not spray onto the fire control servers, routers, or switches or short out the alarms, egress systems, emergency lighting, or suppression systems).",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1474,7 +1970,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Hardware components are marked or labeled to indicate information that is processed, stored, or transmitted. Component markings can be useful for differentiating between safety and control systems, OT and IT equipment, and internally and externally connected systems. Marking components reduces the probability of mismanaging the system or performing maintenance on an incorrect device."
+                  "prose": "OT Discussion (SP 800-82r3): Hardware components are marked or labeled to indicate information that is processed, stored, or transmitted. Component markings can be useful for differentiating between safety and control systems, OT and IT equipment, and internally and externally connected systems. Marking components reduces the probability of mismanaging the system or performing maintenance on an incorrect device.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1488,7 +1991,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1502,7 +2012,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When systems are highly interconnected, coordinated planning is essential. A low-impact system could adversely affect a higher-impact system."
+                  "prose": "OT Discussion (SP 800-82r3): When systems are highly interconnected, coordinated planning is essential. A low-impact system could adversely affect a higher-impact system.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1516,7 +2033,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1530,7 +2054,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Private organizations should utilize existing sector-specific regulations, laws, policy, and guidance for determining appropriate risk designations for positions."
+                  "prose": "OT Discussion (SP 800-82r3): Private organizations should utilize existing sector-specific regulations, laws, policy, and guidance for determining appropriate risk designations for positions.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1544,7 +2075,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1558,7 +2096,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): PHA, functional safety assessments, and other organization-established risk assessments can be referenced to identify the impact level of the OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): PHA, functional safety assessments, and other organization-established risk assessments can be referenced to identify the impact level of the OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1572,7 +2117,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization makes a risk-based determination of how to monitor or scan for vulnerabilities on their system. This may include active scanning, passive monitoring, or compensating controls, depending on the system being scanned. For example, vulnerability examination may be performed using passive monitoring and manual visual inspection to maintain an up-to-date inventory of assets. That inventory can be cross-referenced against a list of known vulnerabilities (e.g., CISA advisories, NIST NVD). Production may need to be taken offline before active scans can be conducted. Scans are scheduled to occur during planned OT outages whenever possible. If vulnerability scanning tools are used on adjacent non-OT networks, extra care is taken to ensure that they do not mistakenly scan the OT network. Automated network scanning is not applicable to non-routable communications, such as serial networks. Compensating controls include providing a replicated or simulated system for conducting scans or host-based vulnerability applications. Control Enhancement (11): For federal organizations, CISA Binding Operational Directive 20-01 requires individual federal civilian executive branch agencies to develop and publish a vulnerability disclosure policy (VDP) for their internet-accessible systems and services and maintain processes to support their VDP. A VDP may be implemented at the organization level rather than for each individual system. Federal and non-federal organizations could achieve this control by creating and monitoring an email address published on a public-facing website for contacting the organization regarding disclosures. NOTE FOR HIGH-IMPACT SYSTEMS: RA-5(4): Examples of discoverable information in OT could include information about key personnel or technical information related to systems and configurations. Locations that may need to be monitored or scanned include technical forums, blogs, and vendor or contractor websites."
+                  "prose": "OT Discussion (SP 800-82r3): The organization makes a risk-based determination of how to monitor or scan for vulnerabilities on their system. This may include active scanning, passive monitoring, or compensating controls, depending on the system being scanned. For example, vulnerability examination may be performed using passive monitoring and manual visual inspection to maintain an up-to-date inventory of assets. That inventory can be cross-referenced against a list of known vulnerabilities (e.g., CISA advisories, NIST NVD). Production may need to be taken offline before active scans can be conducted. Scans are scheduled to occur during planned OT outages whenever possible. If vulnerability scanning tools are used on adjacent non-OT networks, extra care is taken to ensure that they do not mistakenly scan the OT network. Automated network scanning is not applicable to non-routable communications, such as serial networks. Compensating controls include providing a replicated or simulated system for conducting scans or host-based vulnerability applications. Control Enhancement (11): For federal organizations, CISA Binding Operational Directive 20-01 requires individual federal civilian executive branch agencies to develop and publish a vulnerability disclosure policy (VDP) for their internet-accessible systems and services and maintain processes to support their VDP. A VDP may be implemented at the organization level rather than for each individual system. Federal and non-federal organizations could achieve this control by creating and monitoring an email address published on a public-facing website for contacting the organization regarding disclosures. NOTE FOR HIGH-IMPACT SYSTEMS: RA-5(4): Examples of discoverable information in OT could include information about key personnel or technical information related to systems and configurations. Locations that may need to be monitored or scanned include technical forums, blogs, and vendor or contractor websites.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1586,7 +2138,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1600,7 +2159,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations engage with OT suppliers to raise awareness of cybersecurity needs. The SCADA/Control Systems Procurement Project provides example cybersecurity procurement language for OT. Control Enhancements: (1) (2) (9) OT Discussion: When acquiring OT products, consideration for security requirements may not have been incorporated into the design. Procurement may need to consider alternative products or complementary hardware or plan for compensating controls. Control Enhancement (10): The use of approved PIV products is only required for organizations that follow OMB Memorandum M-19-17 (e.g., federal agencies and contractors). Example compensating controls include employing external products on the FIPS 201-approved products list for PIV capabilities in conjunction with OT products. Rationale for adding SA-4 (12) to LOW, MOD, and HIGH baselines: Organizationally sensitive or proprietary OT data is often provided to contractors for project development or support, so data ownership should be defined prior to exchanging data with a vendor or integrator. The potential sharing of data with other parties and the potential deletion of the data after project completion should be determined. OT systems that are operated by contractors on behalf of the organization may be subject to the same requirements (e.g., legal, regulatory, etc.) for data ownership and retention."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations engage with OT suppliers to raise awareness of cybersecurity needs. The SCADA/Control Systems Procurement Project provides example cybersecurity procurement language for OT. Control Enhancements: (1) (2) (9) OT Discussion: When acquiring OT products, consideration for security requirements may not have been incorporated into the design. Procurement may need to consider alternative products or complementary hardware or plan for compensating controls. Control Enhancement (10): The use of approved PIV products is only required for organizations that follow OMB Memorandum M-19-17 (e.g., federal agencies and contractors). Example compensating controls include employing external products on the FIPS 201-approved products list for PIV capabilities in conjunction with OT products. Rationale for adding SA-4 (12) to LOW, MOD, and HIGH baselines: Organizationally sensitive or proprietary OT data is often provided to contractors for project development or support, so data ownership should be defined prior to exchanging data with a vendor or integrator. The potential sharing of data with other parties and the potential deletion of the data after project completion should be determined. OT systems that are operated by contractors on behalf of the organization may be subject to the same requirements (e.g., legal, regulatory, etc.) for data ownership and retention.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1614,7 +2180,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Personnel with knowledge about security and privacy requirements are included in the change management process for the developer."
+                  "prose": "OT Discussion (SP 800-82r3): Personnel with knowledge about security and privacy requirements are included in the change management process for the developer.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1628,7 +2201,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): OT systems may contain system components that are no longer supported by the developer, vendor, or manufacturer and have not been replaced due to various operational, safety, availability, or lifetime constraints. Organizations identify alternative methods to continue supported operation of such system components and consider additional compensating controls to mitigate against known threats and vulnerabilities to unsupported system components."
+                  "prose": "OT Discussion (SP 800-82r3): OT systems may contain system components that are no longer supported by the developer, vendor, or manufacturer and have not been replaced due to various operational, safety, availability, or lifetime constraints. Organizations identify alternative methods to continue supported operation of such system components and consider additional compensating controls to mitigate against known threats and vulnerabilities to unsupported system components.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1642,7 +2222,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1656,7 +2243,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Physical separation includes using separate systems for managing the OT and for operating OT components. Logical separation includes the use of different user accounts for administrative and operator privileges. Example compensating controls include providing increased auditing measures."
+                  "prose": "OT Discussion (SP 800-82r3): Physical separation includes using separate systems for managing the OT and for operating OT components. Logical separation includes the use of different user accounts for administrative and operator privileges. Example compensating controls include providing increased auditing measures.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1670,7 +2264,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations consider implementing this control when designing new architectures or updating existing components. An example compensating control includes access controls."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations consider implementing this control when designing new architectures or updating existing components. An example compensating control includes access controls.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1684,7 +2285,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): This control is especially relevant for OT systems that process confidential data. Example compensating controls include engineering the use of the OT to prevent sharing system resources."
+                  "prose": "OT Discussion (SP 800-82r3): This control is especially relevant for OT systems that process confidential data. Example compensating controls include engineering the use of the OT to prevent sharing system resources.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1698,7 +2306,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Some OT equipment may be more susceptible to DoS attacks due to the time criticality of some OT applications. Risk-based analysis informs the prioritization of DoS protection and the establishment of policy and procedure."
+                  "prose": "OT Discussion (SP 800-82r3): Some OT equipment may be more susceptible to DoS attacks due to the time criticality of some OT applications. Risk-based analysis informs the prioritization of DoS protection and the establishment of policy and procedure.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1712,7 +2327,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (18): The organization selects an appropriate failure mode (e.g., permit or block all communications). Control Enhancement (28): Organizations consider the need for a direct connection to a public network for each OT system, including potential benefits, additional threat vectors, and potential adverse impacts that are specifically relevant to the type of public access that connection introduces. Control Enhancement (29): Subnets can be used to isolate low-risk functions from higher-risk ones and control from safety. Subnets should be considered along with other boundary protection technologies."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (18): The organization selects an appropriate failure mode (e.g., permit or block all communications). Control Enhancement (28): Organizations consider the need for a direct connection to a public network for each OT system, including potential benefits, additional threat vectors, and potential adverse impacts that are specifically relevant to the type of public access that connection introduces. Control Enhancement (29): Subnets can be used to isolate low-risk functions from higher-risk ones and control from safety. Subnets should be considered along with other boundary protection technologies.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1726,7 +2348,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): When transmitting across untrusted network segments, the organization explores all possible cryptographic integrity mechanisms (e.g., digital signature, hash function) to protect the confidentiality and integrity of the information. Example compensating controls include physical protections, such as a secure conduit (e.g., point-to-point link) between two system components."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): When transmitting across untrusted network segments, the organization explores all possible cryptographic integrity mechanisms (e.g., digital signature, hash function) to protect the confidentiality and integrity of the information. Example compensating controls include physical protections, such as a secure conduit (e.g., point-to-point link) between two system components.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1740,7 +2369,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT."
+                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1754,7 +2390,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT."
+                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1768,7 +2411,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT."
+                  "prose": "OT Discussion (SP 800-82r3): Secure name/address resolution services should only be used after careful consideration and verification that they do not adversely impact the operational performance of the OT.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1782,7 +2432,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include auditing measures."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include auditing measures.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1796,7 +2453,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization selects an appropriate failure state. Preserving OT state information includes consistency among OT state variables and the physical state that the OT represents (e.g., whether valves are open or closed, communication permitted or blocked, continue operations)."
+                  "prose": "OT Discussion (SP 800-82r3): The organization selects an appropriate failure state. Preserving OT state information includes consistency among OT state variables and the physical state that the OT represents (e.g., whether valves are open or closed, communication permitted or blocked, continue operations).",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1810,7 +2474,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Cryptographic mechanisms are implemented only after careful consideration and verification that they do not adversely impact the operational performance of the OT. When cryptographic mechanisms are not feasible on certain OT devices, compensating controls may include relocating the data to a location that does support cryptographic mechanisms. Control Enhancement: (1) No OT Discussion for this control."
+                  "prose": "OT Discussion (SP 800-82r3): Cryptographic mechanisms are implemented only after careful consideration and verification that they do not adversely impact the operational performance of the OT. When cryptographic mechanisms are not feasible on certain OT devices, compensating controls may include relocating the data to a location that does support cryptographic mechanisms. Control Enhancement: (1) No OT Discussion for this control.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1824,7 +2495,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include partition processes to separate platforms."
+                  "prose": "OT Discussion (SP 800-82r3): Example compensating controls include partition processes to separate platforms.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1838,7 +2516,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding SC-41 to LOW, MOD, and HIGH baselines: OT functionality is generally defined in advance and does not change often."
+                  "prose": "OT Discussion (SP 800-82r3): Rationale for adding SC-41 to LOW, MOD, and HIGH baselines: OT functionality is generally defined in advance and does not change often.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1852,7 +2537,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations coordinate time synchronization on OT to allow for accurate troubleshooting and forensics. Rationale for adding SC-45 to LOW, MOD, and HIGH baselines: Organizations may find relative system time beneficial for many OT systems to ensure the safe and reliable delivery of essential functions. Time synchronization can also make root cause analysis more efficient by ensuring that audit logs from different systems are aligned so that organizations have an accurate view of events across multiple systems when the logs are aggregated."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations coordinate time synchronization on OT to allow for accurate troubleshooting and forensics. Rationale for adding SC-45 to LOW, MOD, and HIGH baselines: Organizations may find relative system time beneficial for many OT systems to ensure the safe and reliable delivery of essential functions. Time synchronization can also make root cause analysis more efficient by ensuring that audit logs from different systems are aligned so that organizations have an accurate view of events across multiple systems when the logs are aggregated.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1866,7 +2558,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations consider which systems require alternate communication paths to ensure that a loss of communication does not lead to an unacceptable loss of view or control or to a safety event. Rationale for adding SC-47 to HIGH baseline: For continuity of operations during an incident, organizations should consider establishing alternate communications paths for command-and-control purposes to continue to operate and take appropriate actions for high-impact systems when the loss of availability or integrity may result in severe or catastrophic adverse impacts, including impacts to safety and critical service delivery."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations consider which systems require alternate communication paths to ensure that a loss of communication does not lead to an unacceptable loss of view or control or to a safety event. Rationale for adding SC-47 to HIGH baseline: For continuity of operations during an incident, organizations should consider establishing alternate communications paths for command-and-control purposes to continue to operate and take appropriate actions for high-impact systems when the loss of availability or integrity may result in severe or catastrophic adverse impacts, including impacts to safety and critical service delivery.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1880,7 +2579,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems."
+                  "prose": "OT Discussion (SP 800-82r3): The policy specifically addresses the unique properties and requirements of OT and the relationship to non-OT systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1894,7 +2600,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Flaw remediation, or patching, is complicated since many OT employ OSs and other software that are no longer maintained by the vendors. OT operators may also not have the resources or capability to test patches and are dependent on vendors to validate the operability of a patch. Sometimes, the organization has no choice but to accept additional risk if no vendor patch is available, if patching requires additional time to complete validation or testing, or if deployment requires an unacceptable operations shutdown. In these situations, compensating controls should be implemented (e.g., limiting the exposure of the vulnerable system, restricting vulnerable services, implementing virtual patching). Other compensating controls that do not decrease the residual risk but increase the ability to respond may be desirable (e.g., provide a timely response in case of an incident, devise a plan to ensure that the OT can identify exploitation of the flaw). Testing flaw remediation in an OT may exceed the organization’s available resources."
+                  "prose": "OT Discussion (SP 800-82r3): Flaw remediation, or patching, is complicated since many OT employ OSs and other software that are no longer maintained by the vendors. OT operators may also not have the resources or capability to test patches and are dependent on vendors to validate the operability of a patch. Sometimes, the organization has no choice but to accept additional risk if no vendor patch is available, if patching requires additional time to complete validation or testing, or if deployment requires an unacceptable operations shutdown. In these situations, compensating controls should be implemented (e.g., limiting the exposure of the vulnerable system, restricting vulnerable services, implementing virtual patching). Other compensating controls that do not decrease the residual risk but increase the ability to respond may be desirable (e.g., provide a timely response in case of an incident, devise a plan to ensure that the OT can identify exploitation of the flaw). Testing flaw remediation in an OT may exceed the organization’s available resources.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1908,7 +2621,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Malicious code protection should only be deployed after careful consideration and verification that it does not adversely impact the operation of the OT. Malicious code protection tools should be configured to minimize their potential impact on the OT (e.g., employ notification rather than quarantine). Example compensating controls include increased traffic monitoring and auditing."
+                  "prose": "OT Discussion (SP 800-82r3): Malicious code protection should only be deployed after careful consideration and verification that it does not adversely impact the operation of the OT. Malicious code protection tools should be configured to minimize their potential impact on the OT (e.g., employ notification rather than quarantine). Example compensating controls include increased traffic monitoring and auditing.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1922,7 +2642,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that the use of monitoring tools and techniques does not adversely impact the operational performance of the OT. Example compensating controls include deploying sufficient network, process, and physical monitoring. Control Enhancement (2): When the OT cannot support the use of automated tools for near-real-time analysis of events, the organization employs compensating controls (e.g., providing an auditing capability on a separate system, nonautomated mechanisms or procedures) in accordance with the general tailoring guidance. Control Enhancement (5): Example compensating controls include manually generating alerts."
+                  "prose": "OT Discussion (SP 800-82r3): The organization ensures that the use of monitoring tools and techniques does not adversely impact the operational performance of the OT. Example compensating controls include deploying sufficient network, process, and physical monitoring. Control Enhancement (2): When the OT cannot support the use of automated tools for near-real-time analysis of events, the organization employs compensating controls (e.g., providing an auditing capability on a separate system, nonautomated mechanisms or procedures) in accordance with the general tailoring guidance. Control Enhancement (5): Example compensating controls include manually generating alerts.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1936,7 +2663,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): CISA generates security alerts and advisories relative to OT at https://www.cisa.gov/uscert/ics. Industry-specific ISACs often provide tailored advisories and alerts, which can be found at https://www.nationalisacs.org/."
+                  "prose": "OT Discussion (SP 800-82r3): CISA generates security alerts and advisories relative to OT at https://www.cisa.gov/uscert/ics. Industry-specific ISACs often provide tailored advisories and alerts, which can be found at https://www.nationalisacs.org/.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1950,7 +2684,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Shutting down and restarting the OT may not always be feasible upon the identification of an anomaly. These actions should be scheduled according to OT operational requirements."
+                  "prose": "OT Discussion (SP 800-82r3): Shutting down and restarting the OT may not always be feasible upon the identification of an anomaly. These actions should be scheduled according to OT operational requirements.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1964,7 +2705,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The organization determines whether the use of integrity verification applications would adversely impact operation of the ICS and employs compensating controls (e.g., manual integrity verifications that do not affect performance). Control Enhancements: (1) OT Discussion: The organization ensures that the use of integrity verification applications does not adversely impact the operational performance of the OT. Control Enhancement (7): When the ICS cannot detect unauthorized security relevant changes, the organization employs compensating controls (e.g., manual procedures) in accordance with the general tailoring guidance. NOTE FOR HIGH-IMPACT SYSTEMS: SI-7(2): When the organization cannot employ automated tools that provide notifications about integrity discrepancies, the organization employs nonautomated mechanisms or procedures. Example compensating controls include performing scheduled manual inspections for integrity violations. SI-7(5): Shutting down and restarting the ICS may not always be feasible upon identification of an anomaly. These actions should be scheduled according to ICS operational requirements. SI-7(15): Code authentication provides assurance that the software and firmware have not been tampered with. If automated mechanisms are not available, organizations could manually verify code authentication by using a combination of techniques, including verifying hashes, downloading from reputable sources, verifying version numbers with the vendor, or testing software and firmware in offline or test environments."
+                  "prose": "OT Discussion (SP 800-82r3): The organization determines whether the use of integrity verification applications would adversely impact operation of the ICS and employs compensating controls (e.g., manual integrity verifications that do not affect performance). Control Enhancements: (1) OT Discussion: The organization ensures that the use of integrity verification applications does not adversely impact the operational performance of the OT. Control Enhancement (7): When the ICS cannot detect unauthorized security relevant changes, the organization employs compensating controls (e.g., manual procedures) in accordance with the general tailoring guidance. NOTE FOR HIGH-IMPACT SYSTEMS: SI-7(2): When the organization cannot employ automated tools that provide notifications about integrity discrepancies, the organization employs nonautomated mechanisms or procedures. Example compensating controls include performing scheduled manual inspections for integrity violations. SI-7(5): Shutting down and restarting the ICS may not always be feasible upon identification of an anomaly. These actions should be scheduled according to ICS operational requirements. SI-7(15): Code authentication provides assurance that the software and firmware have not been tampered with. If automated mechanisms are not available, organizations could manually verify code authentication by using a combination of techniques, including verifying hashes, downloading from reputable sources, verifying version numbers with the vendor, or testing software and firmware in offline or test environments.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1978,7 +2726,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): OT organizations implement spam protection by removing spam transport mechanisms, functions, and services (e.g., electronic mail, web browsing) from the OT. Rationale for removing SI-8 (2) from MOD and HIGH baselines: Spam transport mechanisms are disabled or removed from the OT, so automatic updates are not necessary."
+                  "prose": "OT Discussion (SP 800-82r3): OT organizations implement spam protection by removing spam transport mechanisms, functions, and services (e.g., electronic mail, web browsing) from the OT. Rationale for removing SI-8 (2) from MOD and HIGH baselines: Spam transport mechanisms are disabled or removed from the OT, so automatic updates are not necessary.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -1992,7 +2747,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Rationale for adding SI-13 control to HIGH baseline: OT are designed and built with certain boundary conditions, design parameters, and assumptions about their environment and mode of operation. OT may run much longer than conventional systems, allowing latent flaws that are not manifest in other environments to become effective. For example, integer overflow might never occur in systems that are re-initialized more frequently than the occurrence of the overflow. Experience and forensic studies of anomalies and incidents in OT can lead to the identification of emergent properties that were previously unknown, unexpected, or unanticipated. Preventative and restorative actions (e.g., restarting the system or application) are prudent but may not be acceptable in OT for operational reasons."
+                  "prose": "Rationale for adding SI-13 control to HIGH baseline: OT are designed and built with certain boundary conditions, design parameters, and assumptions about their environment and mode of operation. OT may run much longer than conventional systems, allowing latent flaws that are not manifest in other environments to become effective. For example, integer overflow might never occur in systems that are re-initialized more frequently than the occurrence of the overflow. Experience and forensic studies of anomalies and incidents in OT can lead to the identification of emergent properties that were previously unknown, unexpected, or unanticipated. Preventative and restorative actions (e.g., restarting the system or application) are prudent but may not be acceptable in OT for operational reasons.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -2006,7 +2768,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): The selected failure conditions and corresponding procedures may vary among baselines. The same failure event may trigger different responses, depending on the impact level. Mechanical and analog systems can be used to provide mechanisms to ensure fail-safe procedures. Fail-safe states should incorporate potential impacts to human safety, physical systems, and the environment. A related controls is CP-6. Rationale for adding SI-17 to LOW, MOD, and HIGH baselines: This control provides a structure for the organization to identify its policy and procedures for dealing with failures and other incidents. Creating a written record of the decision process for selecting incidents and appropriate responses in light of a changing environment of operations is part of risk management."
+                  "prose": "OT Discussion (SP 800-82r3): The selected failure conditions and corresponding procedures may vary among baselines. The same failure event may trigger different responses, depending on the impact level. Mechanical and analog systems can be used to provide mechanisms to ensure fail-safe procedures. Fail-safe states should incorporate potential impacts to human safety, physical systems, and the environment. A related controls is CP-6. Rationale for adding SI-17 to LOW, MOD, and HIGH baselines: This control provides a structure for the organization to identify its policy and procedures for dealing with failures and other incidents. Creating a written record of the decision process for selecting incidents and appropriate responses in light of a changing environment of operations is part of risk management.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -2020,7 +2789,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Supply chain policies and procedures for OT should consider both components received and components produced. Many OT systems use legacy components that cannot meet modern supply chain expectations. Appropriate compensating controls should be developed to achieve organizational supply chain expectations for legacy systems."
+                  "prose": "OT Discussion (SP 800-82r3): Supply chain policies and procedures for OT should consider both components received and components produced. Many OT systems use legacy components that cannot meet modern supply chain expectations. Appropriate compensating controls should be developed to achieve organizational supply chain expectations for legacy systems.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }
@@ -2034,7 +2810,14 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): Vendor relationships and spare parts strategies are developed to ensure that an adequate supply of critical components is available to meet operational needs."
+                  "prose": "OT Discussion (SP 800-82r3): Control Enhancement (1): Vendor relationships and spare parts strategies are developed to ensure that an adequate supply of critical components is available to meet operational needs.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "sp800-82r3-ot"
+                    }
+                  ]
                 }
               ]
             }

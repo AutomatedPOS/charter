@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "21cf38c9-fdb0-447b-a2a7-3bad888838aa",
+    "uuid": "a833e6e7-f1b9-408c-90ca-22d4084542ec",
     "metadata": {
       "title": "DRAFT — NIST SP 800-53B MODERATE + NIST COSAiS/COSIS Predictive AI Overlay (annotated outline, Jan 2026) — MODERATE Impact Baseline",
-      "last-modified": "2026-10-29T15:36:17.00000-00:00",
-      "version": "0.2.0",
+      "last-modified": "2026-10-29T16:26:35.00000-00:00",
+      "version": "0.3.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -445,7 +445,7 @@
           "description": "NIST Special Publication 800-53 Revision 5 catalog",
           "rlinks": [
             {
-              "href": "../nist/sp800-53-rev5/NIST_SP-800-53_rev5_catalog.json",
+              "href": "../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
               "media-type": "application/oscal.catalog+json"
             }
           ]
@@ -459,27 +459,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -490,27 +490,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -521,27 +521,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -552,27 +552,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -583,27 +583,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -614,27 +614,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -645,27 +645,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -676,27 +676,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -707,27 +707,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -738,27 +738,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -769,27 +769,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -800,27 +800,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -831,27 +831,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -862,27 +862,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -893,27 +893,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -924,27 +924,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -955,27 +955,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -986,27 +986,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1017,27 +1017,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1048,27 +1048,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1079,27 +1079,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1110,27 +1110,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1141,27 +1141,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1172,27 +1172,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1203,27 +1203,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1234,27 +1234,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1265,27 +1265,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1296,27 +1296,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1327,27 +1327,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1358,27 +1358,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1389,27 +1389,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1420,27 +1420,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1451,27 +1451,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1482,27 +1482,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1513,27 +1513,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1544,27 +1544,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1575,27 +1575,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1606,27 +1606,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1637,27 +1637,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1668,27 +1668,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1699,27 +1699,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1730,27 +1730,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1761,27 +1761,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1792,27 +1792,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1823,27 +1823,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "summary-table"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "summary-table"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1854,27 +1854,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1885,27 +1885,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1916,27 +1916,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -1947,27 +1947,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -1978,27 +1978,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2009,27 +2009,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2040,27 +2040,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2071,27 +2071,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2102,27 +2102,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2133,27 +2133,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2164,27 +2164,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2195,27 +2195,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2226,27 +2226,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2257,27 +2257,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "additional-proposed-list"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "false"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                  "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "additional-proposed-list"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "false"
+                    }
+                  ]
                 }
               ]
             }
@@ -2288,27 +2288,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "orphan-parent"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (pt-3.1) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (pt-3.1) have a parent control. Whether this control applies to the information system is a risk-based decision.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "orphan-parent"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2319,27 +2319,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "orphan-parent"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-17.3) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-17.3) have a parent control. Whether this control applies to the information system is a risk-based decision.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "orphan-parent"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }
@@ -2350,27 +2350,27 @@
           "adds": [
             {
               "position": "ending",
-              "props": [
-                {
-                  "name": "ai-overlay-source",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "nist-cosais-predictive-draft"
-                },
-                {
-                  "name": "ai-overlay-where",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "orphan-parent"
-                },
-                {
-                  "name": "ai-overlay-added-to-baseline",
-                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-                  "value": "true"
-                }
-              ],
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (si-19.6, si-19.7) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (si-19.6, si-19.7) have a parent control. Whether this control applies to the information system is a risk-based decision.",
+                  "props": [
+                    {
+                      "name": "overlay-source",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "nist-cosais-predictive-draft"
+                    },
+                    {
+                      "name": "ai-overlay-where",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "orphan-parent"
+                    },
+                    {
+                      "name": "ai-overlay-added-to-baseline",
+                      "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                      "value": "true"
+                    }
+                  ]
                 }
               ]
             }

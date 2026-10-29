@@ -4,6 +4,7 @@ Source: https://github.com/usnistgov/oscal-content
 Release: v1.6.0
 Commit: f0de6d8d8c059d374f15e0ae07508d82e370fc1d
 Path: nist.gov/SP800-53/rev5/json/
+Local path: oscal/nist.gov/SP800-53/rev5/json/ (mirrors the source path, so NIST's relative catalog links work unchanged)
 Catalog version: 5.2.0 (OSCAL 1.2.3, last modified 2026-10-22)
 
 These files are unmodified copies. Do not edit them. To update, fetch a new release and change this file.
