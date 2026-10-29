@@ -1,0 +1,20 @@
+control_id,chapter,reason
+ra-2,1,Security categorization belongs with the system's goals
+pl-2,1,"The plan itself: categorization, components, roles, information types"
+pl-8,1,The arc42 document is the security architecture
+ac-17,3,Remote access crosses the system boundary
+ac-18,3,Wireless access crosses the system boundary
+ac-19,3,Mobile devices connect across the system boundary
+ac-20,3,Use of external systems
+ia-8,3,Users from outside the organization
+ca-3,3,Connections to other systems
+ma-4,3,Maintenance from outside the boundary
+sa-9,3,External services
+sc-7,3,Boundary protection
+sc-8,6,Protecting data in transit
+sc-13,6,Cryptography in use at runtime
+au-6,7,Audit review tooling
+au-7,7,Audit reduction and reporting tooling
+ra-5,7,Vulnerability scanning tooling
+si-4,7,Monitoring tooling
+sr-11,7,Counterfeit component checks
