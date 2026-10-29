@@ -14,6 +14,7 @@ These files are unmodified copies. Do not edit them. To update, fetch a new rele
 | NIST_SP-800-53_rev5_LOW-baseline_profile.json | cfd4f5d9a192eb42dc04b745d82f95a85926a2a85a45418034a380a42bda9424 |
 | NIST_SP-800-53_rev5_MODERATE-baseline_profile.json | e3a0f11237cfaac24dfcf1586e07683f17423757fd84208deb33196b12e8f590 |
 | NIST_SP-800-53_rev5_HIGH-baseline_profile.json | d2ef340986b9f1ee820ad866a0f964d9a9d1088b24080c74b795ddb0148b9f83 |
+| NIST_SP-800-53_rev5_PRIVACY-baseline_profile.json | c0e3d54d9f474bc6c33338a8e524bc52ad070f94f9274db7ec48242242fecacc |
 
 ## Draft AI overlay sources
 
