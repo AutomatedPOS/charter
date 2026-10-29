@@ -6,7 +6,9 @@ START-HERE.md is also written to the repo root.
 
 Base baseline and overlay are resolved separately with trestle and merged here:
 the overlay profile gives the control selection and its guidance notes, the
-NIST baselines give the [L M H] tags.
+NIST baselines give the [L M H] tags. The NIST privacy baseline is an add-on
+overlay in every package: it adds the controls the package lacks and tags the
+ones it shares.
 
 Run from anywhere: python scripts/generate.py
 Needs: compliance-trestle (build time only).
@@ -150,6 +152,21 @@ class Placement:
 
 # ---------- START-HERE ----------
 
+RATING_IDS = ['sh-15', 'sh-16', 'sh-17']
+PRIVACY_ID = 'sh-18'
+RATING_GUIDE = [
+    '## Rating each kind of information', '',
+    'Ask sh-15, sh-16, and sh-17 once for each kind of information named in sh-05. '
+    'The harm is to the organization\'s operations, its assets, or individuals. '
+    'The answers follow the FIPS 199 definitions:', '',
+    '- **Limited** is low: a limited adverse effect.',
+    '- **Serious** is moderate: a serious adverse effect.',
+    '- **Severe** is high: a severe or catastrophic adverse effect.', '',
+    'To work out the proposed rating:', '',
+    '1. A leak (sh-15) rates confidentiality, a change (sh-16) rates integrity, and an outage (sh-17) rates availability.',
+    '2. For each of the three, take the highest answer across all kinds of information.',
+    '3. The overall level is the highest of the three. That is the proposed rating sh-12 confirms.', '']
+
 PREFILL = re.compile(r'([a-z]{2}-\d+(?:\.\d+)?)(?:\s+q(\d+))?')
 
 
@@ -182,16 +199,21 @@ def render_start_here(items, controls):
            'The answers are a first draft. They pre-fill the arc42 chapters and the control questions '
            'listed under each one, and get sharpened there.',
            '',
-           'The last question picks the overlay. Together with the impact level from the rating question, '
-           'it tells you which package to use.', '']
+           'sh-14 picks the overlay. Together with the impact level from sh-12, it tells you which package to use. '
+           'sh-18 turns on the privacy overlay, which every package already includes.', '']
     for it in items:
         chapters = ', '.join(str(c) for c in it['chapters'])
+        if it['id'] == RATING_IDS[0]:
+            out += RATING_GUIDE
         out += [f'<!-- charter:start-here id="{it["id"]}" -->',
                 f'## {it["id"]}  ({it["task"]})', '',
                 it['question'], '']
+        if it['id'] in RATING_IDS:
+            out += ['Answer once for each kind of information named in sh-05.', '']
         if it['id'] == 'sh-12':
-            out += ['State low, moderate, or high for each of confidentiality, integrity, and availability, '
-                    'with a reason for each.', '']
+            out += ['The proposed rating comes from sh-15 to sh-17. See "Rating each kind of information" above.', '']
+        if it['id'] == PRIVACY_ID:
+            out += ['Any answer except none turns on the privacy overlay.', '']
         if it['prefill_ids']:
             out.append('**Pre-fills:** ' + ', '.join(prefill_text(c, q, controls) for c, q in it['prefill_ids']))
         else:
@@ -203,14 +225,20 @@ def render_start_here(items, controls):
 
 # ---------- control blocks ----------
 
-def tags(cid, members, overlay, notes, base_ids):
+def tags(cid, members, overlay, notes, overlay_added):
     letters = ' '.join(l for l, lv in zip('LMH', LEVELS) if cid in members[lv])
     out = []
     if letters:
         out.append(f'[{letters}]')
-    if overlay and (cid in notes or cid not in base_ids):
+    if overlay and (cid in notes or cid in overlay_added):
         out.append(f'[{overlay["tag"]}]')
+    if cid in members['privacy']:
+        out.append('[Privacy]')
     return ' '.join(f'`{t}`' for t in out)
+
+
+PRIVACY_NOTE = (f'Privacy overlay: answer only if START-HERE {PRIVACY_ID} names personal information. '
+                f'If {PRIVACY_ID} is none, mark it not-applicable.')
 
 
 def see_also(control, selected, controls, place):
@@ -250,6 +278,8 @@ def control_block(c, ctx, level):
     lines += ask_lines(ctx['questions'][cid]) + ['']
     for note in ctx['notes'].get(cid, []):
         lines += [f'**Consider ({ctx["overlay"]["tag"]}):** {note}', '']
+    if cid in ctx['privacy_added']:
+        lines += [f'**{PRIVACY_NOTE.replace(": ", ":** ", 1)}', '']
     if cid in ctx['from_start']:
         lines += [f'**From START-HERE:** {", ".join(ctx["from_start"][cid])}', '']
     lines += answer_fields()
@@ -273,6 +303,8 @@ def family_block(family, members_list, ctx):
         lines += [f'  {q}' for q in qs[1:]]
         for note in ctx['notes'].get(cid, []):
             lines.append(f'  - Consider ({ctx["overlay"]["tag"]}): {note}')
+        if cid in ctx['privacy_added']:
+            lines.append(f'  - {PRIVACY_NOTE}')
         if cid in ctx['from_start']:
             lines.append(f'  - From START-HERE: {", ".join(ctx["from_start"][cid])}')
     lines += [''] + answer_fields() + ['<!-- /charter:family -->', '']
@@ -297,7 +329,7 @@ def render_chapter(number, title, placed, ctx):
         pm = [ctx['controls'][cid]['label'] for cid in ctx['pm']]
         line = 'Organization-level controls (the PM family) are answered outside this system document.'
         if pm:
-            line += f' This profile includes {len(pm)}: {", ".join(pm)}.'
+            line += f' This package includes {len(pm)}: {", ".join(pm)}.'
         lines += [line, '']
     if number == 9:
         lines += ['Record tailoring decisions here as architecture decision records.', '']
@@ -316,8 +348,8 @@ def render_chapter(number, title, placed, ctx):
             rows = by_family[family]
             lines += [f'### {ctx["families"][family]}', '']
             if rows[0][2] == 'pii':
-                lines += ['Answer this family only if this system handles personal data (START-HERE sh-05). '
-                          'If it does not, mark each control not-applicable.', '']
+                lines += [f'Answer this family only if START-HERE {PRIVACY_ID} names personal information. '
+                          f'If {PRIVACY_ID} is none, mark each control not-applicable.', '']
             if rows[0][1] == 'inherited':
                 lines += family_block(family, [c for c, _, _ in rows], ctx)
                 continue
@@ -348,14 +380,20 @@ def render_readme(ctx):
               f'- Baseline: {ctx["baseline_text"]}',
               f'- Profile file in the Charter repo: `{ctx["profile_file"]}`',
               f'- Catalog: NIST SP 800-53 Rev {CATALOG_VERSION}, from {CONTENT_RELEASE}',
-              f'- Controls: {ctx["count"]} in the profile, {ctx["count"] - len(ctx["pm"])} in the chapters, '
+              f'- Controls: {ctx["count"]} in the package, {ctx["count"] - len(ctx["pm"])} in the chapters, '
               f'{len(ctx["pm"])} organization-level (PM) answered outside this document']
     if o:
         lines.append(f'- Overlay source: {ctx["source_publication"]}')
     if ctx['removed']:
         lines.append('- Removed by the overlay, relative to the NIST baseline: '
                      + ', '.join(ctx['controls'][c]['label'] for c in ctx['removed']))
-    lines.append('')
+    added_pm = sum(c in ctx['pm'] for c in ctx['privacy_added'])
+    lines += ['', '## Privacy overlay', '',
+              f'This package includes the NIST SP 800-53B privacy baseline as an add-on overlay. It adds '
+              f'{len(ctx["privacy_added"])} controls ({len(ctx["privacy_added"]) - added_pm} in the chapters, '
+              f'{added_pm} organization-level) and tags the controls already here that it also names `[Privacy]`. '
+              f'It is turned on when START-HERE {PRIVACY_ID} names any personal information. If {PRIVACY_ID} is '
+              f'none, mark the controls it adds not-applicable.', '']
     if o and o['tag'] == 'SAFE-AI':
         lines += ['SAFE-AI is ©2025 The MITRE Corporation, all rights reserved; approved for public release, '
                   'distribution unlimited, case 25-1028. Only its control ids are used. Its guidance text is not '
@@ -418,7 +456,7 @@ def main():
         trestle_root = pathlib.Path(tmp)
         (trestle_root / '.trestle/cache').mkdir(parents=True)
         members = {lv: set(control_parts(resolved_catalog(
-            trestle_root, f'NIST_SP-800-53_rev5_{lv.upper()}-baseline_profile.json'))) for lv in LEVELS}
+            trestle_root, f'NIST_SP-800-53_rev5_{lv.upper()}-baseline_profile.json'))) for lv in LEVELS + ['privacy']}
 
         for key, overlay in OVERLAYS.items():
             for level in LEVELS:
@@ -437,7 +475,9 @@ def main():
                     profile_file = (NIST / f'NIST_SP-800-53_rev5_{level.upper()}-baseline_profile.json').relative_to(ROOT).as_posix()
                     baseline_text = f'NIST SP 800-53B {level}'
                 base_ids = members[level]
-                selected = set(parts) if overlay else base_ids
+                package_ids = set(parts) if overlay else base_ids
+                privacy_added = members['privacy'] - package_ids
+                selected = package_ids | members['privacy']
                 missing = sorted(set(selected) - set(controls), key=str)
                 if missing:
                     raise SystemExit(f'{name}: not active controls in the catalog: {missing}')
@@ -450,8 +490,10 @@ def main():
                        'from_start': {k: v for k, v in from_start.items() if k in selected},
                        'baseline_text': baseline_text, 'profile_file': profile_file,
                        'source_publication': source_publication, 'count': len(selected),
-                       'removed': sorted(base_ids - selected, key=order.__getitem__)}
-                ctx['tags'] = lambda cid, ctx=ctx: tags(cid, members, overlay, notes, base_ids)
+                       'removed': sorted(base_ids - selected, key=order.__getitem__),
+                       'privacy_added': privacy_added}
+                overlay_added = package_ids - base_ids
+                ctx['tags'] = lambda cid, overlay_added=overlay_added: tags(cid, members, overlay, notes, overlay_added)
                 ctx['see_also'] = lambda c, selected=selected: see_also(c, selected, controls, place)
 
                 chapters = {n: [] for n in range(1, 13)}
@@ -477,8 +519,10 @@ def main():
                 (folder / 'AGENTS.md').write_text(render_agents(ctx), encoding='utf-8')
                 target = BUILD / f'{name}.zip'
                 write_zip(folder, target)
+                added_pm = sum(c in ctx['pm'] for c in privacy_added)
                 print(f'{name}: {len(selected)} controls, {placed} in chapters, {len(ctx["pm"])} PM, '
-                      f'{len(notes)} with overlay notes, {target.stat().st_size} bytes')
+                      f'{len(notes)} with overlay notes, privacy adds {len(privacy_added)} '
+                      f'({len(privacy_added) - added_pm} in chapters, {added_pm} PM), {target.stat().st_size} bytes')
 
 
 if __name__ == '__main__':

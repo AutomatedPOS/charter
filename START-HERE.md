@@ -4,7 +4,7 @@ Answer these questions before you work the arc42 chapters. They are the same for
 
 Anyone can answer any of them: the business owner, the security contact, or the architect. The answers are a first draft. They pre-fill the arc42 chapters and the control questions listed under each one, and get sharpened there.
 
-The last question picks the overlay. Together with the impact level from the rating question, it tells you which package to use.
+sh-14 picks the overlay. Together with the impact level from sh-12, it tells you which package to use. sh-18 turns on the privacy overlay, which every package already includes.
 
 <!-- charter:start-here id="sh-01" -->
 ## sh-01  (P-8)
@@ -68,6 +68,68 @@ Where does this system start and stop: what's inside it, and what sits outside b
 What kinds of information does this system handle, such as customer records, financial data, health data, or system logs?
 
 **Pre-fills:** RA-2, PL-2 question 1
+
+**arc42 chapter:** 1
+
+**Answer:**
+
+
+<!-- /charter:start-here -->
+
+## Rating each kind of information
+
+Ask sh-15, sh-16, and sh-17 once for each kind of information named in sh-05. The harm is to the organization's operations, its assets, or individuals. The answers follow the FIPS 199 definitions:
+
+- **Limited** is low: a limited adverse effect.
+- **Serious** is moderate: a serious adverse effect.
+- **Severe** is high: a severe or catastrophic adverse effect.
+
+To work out the proposed rating:
+
+1. A leak (sh-15) rates confidentiality, a change (sh-16) rates integrity, and an outage (sh-17) rates availability.
+2. For each of the three, take the highest answer across all kinds of information.
+3. The overall level is the highest of the three. That is the proposed rating sh-12 confirms.
+
+<!-- charter:start-here id="sh-15" -->
+## sh-15  (C-2)
+
+How bad would it be if this information leaked to the wrong people: limited, serious, or severe?
+
+Answer once for each kind of information named in sh-05.
+
+**Pre-fills:** RA-2
+
+**arc42 chapter:** 1
+
+**Answer:**
+
+
+<!-- /charter:start-here -->
+
+<!-- charter:start-here id="sh-16" -->
+## sh-16  (C-2)
+
+How bad would it be if this information were changed or corrupted without anyone noticing: limited, serious, or severe?
+
+Answer once for each kind of information named in sh-05.
+
+**Pre-fills:** RA-2
+
+**arc42 chapter:** 1
+
+**Answer:**
+
+
+<!-- /charter:start-here -->
+
+<!-- charter:start-here id="sh-17" -->
+## sh-17  (C-2)
+
+How bad would it be if this information or the system using it were unavailable for a day: limited, serious, or severe?
+
+Answer once for each kind of information named in sh-05.
+
+**Pre-fills:** RA-2
 
 **arc42 chapter:** 1
 
@@ -163,9 +225,9 @@ Where is this system registered in the organization's system inventory, and who'
 <!-- charter:start-here id="sh-12" -->
 ## sh-12  (C-2)
 
-For confidentiality, integrity, and availability, is the proposed impact low, moderate, or high, and what is the reason for any change?
+What final impact level, low, moderate, or high, applies to confidentiality, integrity, and availability, and why does any differ from the proposed rating?
 
-State low, moderate, or high for each of confidentiality, integrity, and availability, with a reason for each.
+The proposed rating comes from sh-15 to sh-17. See "Rating each kind of information" above.
 
 **Pre-fills:** RA-2
 
@@ -196,6 +258,22 @@ Who approved this system's impact rating, and when?
 Which kind of system is this: an AI system, an OT system, or neither?
 
 **Pre-fills:** (picks overlay)
+
+**arc42 chapter:** 1
+
+**Answer:**
+
+
+<!-- /charter:start-here -->
+
+<!-- charter:start-here id="sh-18" -->
+## sh-18  (Select)
+
+Which kinds of personal information does this system handle, if any?
+
+Any answer except none turns on the privacy overlay.
+
+**Pre-fills:** (adds privacy overlay)
 
 **arc42 chapter:** 1
 
