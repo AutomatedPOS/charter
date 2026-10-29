@@ -19,3 +19,12 @@ Charter works with any OSCAL catalog, not only 800-53.
 
 - NIST SP 800-53 Rev 5 catalog and baselines, from the NIST OSCAL content repository.
 - arc42 architecture template.
+
+## Drafts
+
+The AI overlay profiles in `oscal/profiles/profile-ai-*` are drafts. Both are derived from draft or third-party material:
+
+- MITRE SAFE-AI, "A Framework for Securing AI-Enabled Systems" (April 2025), Appendix D.
+- NIST COSAiS annotated outline, "Control Overlay for Securing AI Systems: Using and Fine-Tuning Predictive AI" (January 2026).
+
+They will be replaced when NIST publishes its AI overlays.

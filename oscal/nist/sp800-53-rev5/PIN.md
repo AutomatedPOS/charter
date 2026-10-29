@@ -14,3 +14,11 @@ These files are unmodified copies. Do not edit them. To update, fetch a new rele
 | NIST_SP-800-53_rev5_LOW-baseline_profile.json | cfd4f5d9a192eb42dc04b745d82f95a85926a2a85a45418034a380a42bda9424 |
 | NIST_SP-800-53_rev5_MODERATE-baseline_profile.json | e3a0f11237cfaac24dfcf1586e07683f17423757fd84208deb33196b12e8f590 |
 | NIST_SP-800-53_rev5_HIGH-baseline_profile.json | d2ef340986b9f1ee820ad866a0f964d9a9d1088b24080c74b795ddb0148b9f83 |
+
+## Draft AI overlay sources
+
+The `profile-ai-*` files in `oscal/profiles/` are drafts. They import the catalog above. They use only control ids from the sources below; no source text is copied.
+
+SAFE-AI (`profile-ai-safe-ai-*`): "SAFE-AI: A Framework for Securing AI-Enabled Systems", MITRE MP250397, April 2025, Appendix D Table 2. ©2025 The MITRE Corporation, all rights reserved. "Approved for Public Release; Distribution Unlimited", Public Release Case Number 25-1028. Only the control ids and the report's own L/M/H column were used. That column matches NIST's baselines on all 96 non-PM rows. The report marks PM controls LMH; PM is in no NIST baseline.
+
+NIST COSAiS (`profile-ai-nist-cosais-predictive-draft-*`): "Control Overlay for Securing AI Systems: Using and Fine-Tuning Predictive AI", annotated outline, January 2026, intended as NISTIR 8605/8605A. 11 controls from its summary table and 48 from its additional proposed list. NIST states the list is not complete. No public draft or final overlay exists as of 2026-10-29. The project was renamed COSIS on 2026-10-20.

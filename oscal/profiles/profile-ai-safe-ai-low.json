@@ -1,0 +1,3430 @@
+{
+  "profile": {
+    "uuid": "00ccf21b-24e0-4a9c-a4cf-06a437f400ae",
+    "metadata": {
+      "title": "DRAFT — NIST SP 800-53B LOW + MITRE SAFE-AI Overlay — LOW Impact AI-Enabled System Baseline",
+      "last-modified": "2026-10-29T15:22:47.00000-00:00",
+      "version": "0.1.0",
+      "oscal-version": "1.2.2",
+      "props": [
+        {
+          "name": "baseline",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "low"
+        },
+        {
+          "name": "overlay",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "safe-ai"
+        },
+        {
+          "name": "status",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "draft"
+        },
+        {
+          "name": "source-publication",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2 'AI Controls'"
+        },
+        {
+          "name": "base-baseline",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "NIST SP 800-53B LOW"
+        },
+        {
+          "name": "control-count",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "201"
+        },
+        {
+          "name": "nist-53b-low-count",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "149"
+        },
+        {
+          "name": "overlay-controls-named",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "100"
+        },
+        {
+          "name": "overlay-controls-added",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "52"
+        },
+        {
+          "name": "overlay-controls-removed",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "0"
+        }
+      ],
+      "roles": [
+        {
+          "id": "creator",
+          "title": "OSCAL Version Creator"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "98c78f9b-5d50-4b01-b47f-d16801e8d0ab",
+          "type": "organization",
+          "name": "Charter (derived from NIST SP 800-53B and the cited AI source)",
+          "short-name": "Charter"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "creator",
+          "party-uuids": [
+            "98c78f9b-5d50-4b01-b47f-d16801e8d0ab"
+          ]
+        }
+      ],
+      "remarks": "DRAFT. Derived from NIST SP 800-53 Revision 5.2.0 LOW Impact Baseline plus all 100 AI-affected controls listed in MITRE SAFE-AI Appendix D Table 2, attached regardless of baseline so the system owner or security engineer can mark non-applicable controls per system. Four PM controls from the table are included; PM is organization-level. No control is removed. MITRE's AI-specific guidance text is not copied; each alter cites the report. SAFE-AI is a MITRE work product, not a NIST publication.",
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_LOW-baseline_profile.json",
+          "rel": "derived-from",
+          "media-type": "application/oscal.profile+json"
+        },
+        {
+          "href": "https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf",
+          "rel": "source"
+        }
+      ]
+    },
+    "imports": [
+      {
+        "href": "#84cbf061-eb87-4ec1-8112-1f529232e907",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-2.12",
+              "ac-3",
+              "ac-4",
+              "ac-4.9",
+              "ac-4.15",
+              "ac-4.25",
+              "ac-5",
+              "ac-6",
+              "ac-7",
+              "ac-8",
+              "ac-12",
+              "ac-14",
+              "ac-17",
+              "ac-18",
+              "ac-19",
+              "ac-20",
+              "ac-21",
+              "ac-22",
+              "ac-23",
+              "ac-24",
+              "at-1",
+              "at-2",
+              "at-2.2",
+              "at-3",
+              "at-4",
+              "au-1",
+              "au-2",
+              "au-3",
+              "au-4",
+              "au-5",
+              "au-6",
+              "au-6.5",
+              "au-8",
+              "au-9",
+              "au-11",
+              "au-12",
+              "ca-1",
+              "ca-2",
+              "ca-3",
+              "ca-5",
+              "ca-6",
+              "ca-7",
+              "ca-7.4",
+              "ca-8",
+              "ca-9",
+              "cm-1",
+              "cm-2",
+              "cm-3",
+              "cm-4",
+              "cm-5",
+              "cm-6",
+              "cm-7",
+              "cm-8",
+              "cm-10",
+              "cm-11",
+              "cm-13",
+              "cm-14",
+              "cp-1",
+              "cp-2",
+              "cp-3",
+              "cp-4",
+              "cp-9",
+              "cp-10",
+              "ia-1",
+              "ia-2",
+              "ia-2.1",
+              "ia-2.2",
+              "ia-2.8",
+              "ia-2.12",
+              "ia-3",
+              "ia-4",
+              "ia-5",
+              "ia-5.1",
+              "ia-6",
+              "ia-7",
+              "ia-8",
+              "ia-8.1",
+              "ia-8.2",
+              "ia-8.4",
+              "ia-11",
+              "ia-12",
+              "ir-1",
+              "ir-2",
+              "ir-4",
+              "ir-5",
+              "ir-6",
+              "ir-7",
+              "ir-8",
+              "ma-1",
+              "ma-2",
+              "ma-3",
+              "ma-4",
+              "ma-5",
+              "ma-6",
+              "mp-1",
+              "mp-2",
+              "mp-6",
+              "mp-7",
+              "pe-1",
+              "pe-2",
+              "pe-3",
+              "pe-6",
+              "pe-8",
+              "pe-11",
+              "pe-12",
+              "pe-13",
+              "pe-14",
+              "pe-15",
+              "pe-16",
+              "pl-1",
+              "pl-2",
+              "pl-4",
+              "pl-4.1",
+              "pl-8",
+              "pl-10",
+              "pl-11",
+              "pm-7",
+              "pm-12",
+              "pm-18",
+              "pm-30",
+              "ps-1",
+              "ps-2",
+              "ps-3",
+              "ps-4",
+              "ps-5",
+              "ps-6",
+              "ps-7",
+              "ps-8",
+              "ps-9",
+              "ra-1",
+              "ra-2",
+              "ra-3",
+              "ra-3.1",
+              "ra-5",
+              "ra-5.2",
+              "ra-5.11",
+              "ra-7",
+              "sa-1",
+              "sa-2",
+              "sa-3",
+              "sa-3.2",
+              "sa-4",
+              "sa-4.10",
+              "sa-5",
+              "sa-8",
+              "sa-9",
+              "sa-9.5",
+              "sa-9.6",
+              "sa-9.8",
+              "sa-10",
+              "sa-17",
+              "sa-22",
+              "sc-1",
+              "sc-2",
+              "sc-3",
+              "sc-4",
+              "sc-5",
+              "sc-6",
+              "sc-7",
+              "sc-8",
+              "sc-10",
+              "sc-12",
+              "sc-13",
+              "sc-15",
+              "sc-17",
+              "sc-18",
+              "sc-20",
+              "sc-21",
+              "sc-22",
+              "sc-23",
+              "sc-24",
+              "sc-28",
+              "sc-37",
+              "sc-39",
+              "si-1",
+              "si-2",
+              "si-3",
+              "si-4",
+              "si-5",
+              "si-7",
+              "si-10",
+              "si-11",
+              "si-12",
+              "si-16",
+              "si-20",
+              "sr-1",
+              "sr-2",
+              "sr-2.1",
+              "sr-3",
+              "sr-4",
+              "sr-5",
+              "sr-6",
+              "sr-8",
+              "sr-9",
+              "sr-10",
+              "sr-11",
+              "sr-11.1",
+              "sr-11.2",
+              "sr-12"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "84cbf061-eb87-4ec1-8112-1f529232e907",
+          "description": "NIST Special Publication 800-53 Revision 5 catalog",
+          "rlinks": [
+            {
+              "href": "../nist/sp800-53-rev5/NIST_SP-800-53_rev5_catalog.json",
+              "media-type": "application/oscal.catalog+json"
+            }
+          ]
+        }
+      ]
+    },
+    "modify": {
+      "alters": [
+        {
+          "control-id": "ac-1",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-2.12",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-4",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-4.9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-4.15",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-4.25",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-7",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-12",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-14",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-17",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-20",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-21",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-23",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ac-24",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "at-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-6.5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "au-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ca-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-7",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-11",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-13",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cm-14",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-1",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "cp-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2.1",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-2.2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ia-12",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ma-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-11",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-4",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pl-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pm-7",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pm-12",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pm-18",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pm-30",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ra-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-3.2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-9.5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-9.6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-9.8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-10",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-17",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-22",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-4",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-7",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-10",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-12",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-13",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-15",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-17",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-18",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-23",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-24",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-28",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-37",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sc-39",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-4",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-7",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-10",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-11",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-16",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-20",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-1",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-2",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-4",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-5",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-6",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-8",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sr-11",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "safe-ai"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "appendix-d-table-2"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "false"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
