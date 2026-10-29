@@ -3,8 +3,8 @@
     "uuid": "359e2c3a-0d3e-471e-aadc-fa10f91f998b",
     "metadata": {
       "title": "NIST SP 800-53B LOW + SP 800-82r3 OT Overlay — LOW Impact OT Baseline",
-      "last-modified": "2026-10-29T15:02:07.00000-00:00",
-      "version": "1.0.0",
+      "last-modified": "2026-10-29T15:22:15.00000-00:00",
+      "version": "1.1.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -379,7 +379,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): When OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement: (1) OT Discussion: The implementation of authentication and encryption is driven by the OT environment. If devices and users cannot all be authenticated and encrypted due to operational or technology constraints, compensating controls include providing increased auditing for wireless access, limiting wireless access privileges to key personnel, or using AC-18 (5) to reduce the boundary of wireless access. Control Enhancement (1): The implementation of authentication and encryption is driven by the OT environment. If devices and users cannot all be authenticated and encrypted due to operational or technology constraints, compensating controls include providing increased auditing for wireless access, limiting wireless access privileges to key personnel, or using AC-18 (5) to reduce the boundary of wireless access."
+                  "prose": "OT Discussion (SP 800-82r3): When OT cannot implement any or all of the components of this control, the organization employs other mechanisms or procedures as compensating controls in accordance with the general tailoring guidance. Control Enhancement: (1) OT Discussion: The implementation of authentication and encryption is driven by the OT environment. If devices and users cannot all be authenticated and encrypted due to operational or technology constraints, compensating controls include providing increased auditing for wireless access, limiting wireless access privileges to key personnel, or using AC-18 (5) to reduce the boundary of wireless access."
                 }
               ]
             }
@@ -939,7 +939,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "OT Discussion (SP 800-82r3): Organizations identify OT systems and system components with specific calibration, maintenance, or other requirements and limit maintenance to specific facilities. Some examples may include safety-critical systems or systems involved in custody transfer where accuracy tolerances are limited and additional quality control checks are required. Rationale for adding MA-7 to LOW, MOD, and HIGH baselines: Some OT equipment have specific requirements for calibration, maintenance, and modification to meet regulatory or safety standards. Different deployed locations may impact the quality and precision of field maintenance. Rationale for adding MA-7 to LOW, MOD, and HIGH baselines: Some OT equipment have specific requirements for calibration, maintenance, and modification to meet regulatory or safety standards. Different deployed locations may impact the quality and precision of field maintenance."
+                  "prose": "OT Discussion (SP 800-82r3): Organizations identify OT systems and system components with specific calibration, maintenance, or other requirements and limit maintenance to specific facilities. Some examples may include safety-critical systems or systems involved in custody transfer where accuracy tolerances are limited and additional quality control checks are required. Rationale for adding MA-7 to LOW, MOD, and HIGH baselines: Some OT equipment have specific requirements for calibration, maintenance, and modification to meet regulatory or safety standards. Different deployed locations may impact the quality and precision of field maintenance."
                 }
               ]
             }
