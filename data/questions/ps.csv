@@ -12,7 +12,7 @@
 "ps-4.2","1","What automated steps cut off access to this system or notify its owners when someone leaves?","ps-4.2_obj","reviewed"
 "ps-5","1","When someone moves to a new role, how is their access to this system reviewed and adjusted, how quickly, and who is told?","ps-5_obj.a ps-5_obj.b ps-5_obj.c ps-5_obj.d","reviewed"
 "ps-6","1","What agreements must people sign before using this system, how often are those agreements updated, and when must users sign again?","ps-6_obj.a ps-6_obj.b ps-6_obj.c.1 ps-6_obj.c.2","reviewed"
-"ps-6.2","1","What agreements must people sign before getting access to highly sensitive information in this system, and how are they kept current?","ps-6.2_obj.a ps-6.2_obj.b ps-6.2_obj.c","reviewed"
+"ps-6.2","1","Before getting access to highly sensitive information in this system, what duties, screening, and signed agreements must a person have?","ps-6.2_obj.a ps-6.2_obj.b ps-6.2_obj.c","reviewed"
 "ps-6.3","1","How are new users of this system's sensitive information told of duties that outlast their job, and how do they acknowledge them?","ps-6.3_obj.a ps-6.3_obj.b","reviewed"
 "ps-7","1","What personnel security rules apply to vendors and contractors who work on this system, how quickly must they report departures, and who checks they comply?","ps-7_obj.a ps-7_obj.b ps-7_obj.c ps-7_obj.d ps-7_obj.e","reviewed"
 "ps-8","1","What happens to someone who breaks this system's security or privacy rules, and who is told when that process starts?","ps-8_obj.a ps-8_obj.b","reviewed"
