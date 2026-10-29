@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "a0b4dace-05d7-466d-8532-bfbe37fabaa0",
+    "uuid": "99557983-fe54-4286-9552-517b03e2f8dc",
     "metadata": {
       "title": "DRAFT — NIST SP 800-53B HIGH + MITRE SAFE-AI Overlay — HIGH Impact AI-Enabled System Baseline",
-      "last-modified": "2026-10-29T15:22:47.00000-00:00",
-      "version": "0.1.0",
+      "last-modified": "2026-10-29T15:36:17.00000-00:00",
+      "version": "0.2.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -54,6 +54,11 @@
         },
         {
           "name": "overlay-controls-removed",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "0"
+        },
+        {
+          "name": "orphan-parents-added",
           "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
           "value": "0"
         }
@@ -537,7 +542,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -568,7 +573,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -599,7 +604,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -630,7 +635,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -661,7 +666,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -692,7 +697,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -723,7 +728,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -754,7 +759,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -785,7 +790,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -816,7 +821,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -847,7 +852,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -878,7 +883,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -909,7 +914,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -940,7 +945,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -971,7 +976,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1002,7 +1007,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1033,7 +1038,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1064,7 +1069,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1095,7 +1100,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1126,7 +1131,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1157,7 +1162,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1188,7 +1193,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1219,7 +1224,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1250,7 +1255,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1281,7 +1286,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1312,7 +1317,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1343,7 +1348,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1374,7 +1379,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1405,7 +1410,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1436,7 +1441,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1467,7 +1472,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1498,7 +1503,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1529,7 +1534,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1560,7 +1565,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1591,7 +1596,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1622,7 +1627,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1653,7 +1658,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1684,7 +1689,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1715,7 +1720,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1746,7 +1751,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1777,7 +1782,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1808,7 +1813,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1839,7 +1844,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1870,7 +1875,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1901,7 +1906,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1932,7 +1937,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1963,7 +1968,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -1994,7 +1999,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2025,7 +2030,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2056,7 +2061,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2087,7 +2092,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2118,7 +2123,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2149,7 +2154,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2180,7 +2185,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2211,7 +2216,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2242,7 +2247,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2273,7 +2278,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2304,7 +2309,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2335,7 +2340,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2366,7 +2371,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2397,7 +2402,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2428,7 +2433,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2459,7 +2464,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2490,7 +2495,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2521,7 +2526,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2552,7 +2557,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2583,7 +2588,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2614,7 +2619,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2645,7 +2650,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2676,7 +2681,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2707,7 +2712,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2738,7 +2743,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2769,7 +2774,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2800,7 +2805,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2831,7 +2836,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2862,7 +2867,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2893,7 +2898,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2924,7 +2929,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2955,7 +2960,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -2986,7 +2991,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3017,7 +3022,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3048,7 +3053,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3079,7 +3084,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3110,7 +3115,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3141,7 +3146,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3172,7 +3177,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3203,7 +3208,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3234,7 +3239,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3265,7 +3270,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3296,7 +3301,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3327,7 +3332,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3358,7 +3363,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3389,7 +3394,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3420,7 +3425,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3451,7 +3456,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3482,7 +3487,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3513,7 +3518,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3544,7 +3549,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3575,7 +3580,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }
@@ -3606,7 +3611,7 @@
               "parts": [
                 {
                   "name": "guidance",
-                  "prose": "AI-affected control (MITRE SAFE-AI, MP250397, April 2025, Appendix D Table 2). SAFE-AI identifies this control as affected by AI-enabled system elements and gives AI-specific implementation guidance in the report; that guidance is not reproduced here. The report is approved for public release, distribution unlimited (Public Release Case Number 25-1028), ©2025 The MITRE Corporation."
+                  "prose": "AI-affected control. Control selections are drawn from MITRE SAFE-AI: A Framework for Securing AI-Enabled Systems (MP250397, April 2025), Appendix D Table 2. MITRE retains copyright on that report (©2025 The MITRE Corporation, all rights reserved; approved for public release, distribution unlimited, case 25-1028), so its AI-specific guidance and rationale text is not reproduced here. Consult the report directly for the full guidance: https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf"
                 }
               ]
             }

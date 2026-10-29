@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "4feb20ec-7a12-4ba4-9ce6-94c67e65b36d",
+    "uuid": "21cf38c9-fdb0-447b-a2a7-3bad888838aa",
     "metadata": {
       "title": "DRAFT — NIST SP 800-53B MODERATE + NIST COSAiS/COSIS Predictive AI Overlay (annotated outline, Jan 2026) — MODERATE Impact Baseline",
-      "last-modified": "2026-10-29T15:22:47.00000-00:00",
-      "version": "0.1.0",
+      "last-modified": "2026-10-29T15:36:17.00000-00:00",
+      "version": "0.2.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -35,7 +35,7 @@
         {
           "name": "control-count",
           "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-          "value": "323"
+          "value": "326"
         },
         {
           "name": "nist-53b-moderate-count",
@@ -56,6 +56,11 @@
           "name": "overlay-controls-removed",
           "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
           "value": "0"
+        },
+        {
+          "name": "orphan-parents-added",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "3"
         }
       ],
       "roles": [
@@ -308,6 +313,7 @@
               "ps-7",
               "ps-8",
               "ps-9",
+              "pt-3",
               "pt-3.1",
               "pt-4",
               "pt-6",
@@ -349,6 +355,7 @@
               "sa-15.3",
               "sa-15.6",
               "sa-15.8",
+              "sa-17",
               "sa-17.3",
               "sa-22",
               "sc-1",
@@ -406,6 +413,7 @@
               "si-16",
               "si-17",
               "si-18",
+              "si-19",
               "si-19.6",
               "si-19.7",
               "si-23",
@@ -2270,6 +2278,99 @@
                 {
                   "name": "guidance",
                   "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pt-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (pt-3.1) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-17",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-17.3) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-19",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the MODERATE baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (si-19.6, si-19.7) have a parent control. Whether this control applies to the information system is a risk-based decision."
                 }
               ]
             }

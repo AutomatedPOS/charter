@@ -28,3 +28,5 @@ The AI overlay profiles in `oscal/profiles/profile-ai-*` are drafts. Both are de
 - NIST COSAiS annotated outline, "Control Overlay for Securing AI Systems: Using and Fine-Tuning Predictive AI" (January 2026).
 
 They will be replaced when NIST publishes its AI overlays.
+
+The SAFE-AI profiles keep the four PM controls MITRE names (PM-7, PM-12, PM-18, PM-30). The generator skips the PM family, per the placement map, so they do not appear in chapter output.

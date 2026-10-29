@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "dcae6b1b-d134-4701-86d3-6d95db70c2db",
+    "uuid": "5f52544e-4c1c-4036-b9ce-140014a10a10",
     "metadata": {
       "title": "DRAFT — NIST SP 800-53B LOW + NIST COSAiS/COSIS Predictive AI Overlay (annotated outline, Jan 2026) — LOW Impact Baseline",
-      "last-modified": "2026-10-29T15:22:47.00000-00:00",
-      "version": "0.1.0",
+      "last-modified": "2026-10-29T15:36:17.00000-00:00",
+      "version": "0.2.0",
       "oscal-version": "1.2.2",
       "props": [
         {
@@ -35,7 +35,7 @@
         {
           "name": "control-count",
           "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
-          "value": "192"
+          "value": "198"
         },
         {
           "name": "nist-53b-low-count",
@@ -56,6 +56,11 @@
           "name": "overlay-controls-removed",
           "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
           "value": "0"
+        },
+        {
+          "name": "orphan-parents-added",
+          "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+          "value": "6"
         }
       ],
       "roles": [
@@ -188,6 +193,7 @@
               "pe-3",
               "pe-6",
               "pe-8",
+              "pe-9",
               "pe-9.2",
               "pe-12",
               "pe-13",
@@ -210,6 +216,7 @@
               "ps-7",
               "ps-8",
               "ps-9",
+              "pt-3",
               "pt-3.1",
               "pt-4",
               "pt-6",
@@ -234,13 +241,16 @@
               "sa-8.19",
               "sa-8.22",
               "sa-9",
+              "sa-11",
               "sa-11.2",
               "sa-11.5",
               "sa-11.9",
+              "sa-15",
               "sa-15.1",
               "sa-15.2",
               "sa-15.6",
               "sa-15.8",
+              "sa-17",
               "sa-17.3",
               "sa-22",
               "sc-1",
@@ -276,6 +286,7 @@
               "si-15",
               "si-17",
               "si-18",
+              "si-19",
               "si-19.6",
               "si-19.7",
               "si-23",
@@ -2139,6 +2150,192 @@
                 {
                   "name": "guidance",
                   "prose": "Proposed for the predictive AI overlay in NIST's COSAiS (renamed COSIS, Oct 2026) annotated outline, January 2026. DRAFT: NIST states 'The list of controls identified for potential inclusion in this overlay is not complete.' No overlay has been published as a public draft or final as of 2026-10-29."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pe-9",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (pe-9.2) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "pt-3",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (pt-3.1) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-11",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-11.2, sa-11.5, sa-11.9) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-15",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-15.1, sa-15.2, sa-15.6, sa-15.8) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "sa-17",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (sa-17.3) have a parent control. Whether this control applies to the information system is a risk-based decision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "si-19",
+          "adds": [
+            {
+              "position": "ending",
+              "props": [
+                {
+                  "name": "ai-overlay-source",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "nist-cosais-predictive-draft"
+                },
+                {
+                  "name": "ai-overlay-where",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "orphan-parent"
+                },
+                {
+                  "name": "ai-overlay-added-to-baseline",
+                  "ns": "https://github.com/AutomatedPOS/charter/oscal/baseline-profile",
+                  "value": "true"
+                }
+              ],
+              "parts": [
+                {
+                  "name": "guidance",
+                  "prose": "This base control is not normally part of the LOW baseline and was not named by the overlay source. It is included only so that its enhancement(s) named by the source (si-19.6, si-19.7) have a parent control. Whether this control applies to the information system is a risk-based decision."
                 }
               ]
             }
