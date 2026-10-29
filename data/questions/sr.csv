@@ -1,6 +1,6 @@
 "control_id","q","question","covers","status"
-"sr-1","1","Which supply chain risk policy and procedures govern this system, who owns them, and when were they last reviewed?","sr-1_obj.a-1 sr-1_obj.a-2 sr-1_obj.a-3 sr-1_obj.a-4 sr-1_obj.a.1.a-1 sr-1_obj.a.1.a-2 sr-1_obj.a.1.a-3 sr-1_obj.a.1.a-4 sr-1_obj.a.1.a-5 sr-1_obj.a.1.a-6 sr-1_obj.a.1.a-7 sr-1_obj.a.1.b sr-1_obj.b sr-1_obj.c.1-1 sr-1_obj.c.1-2 sr-1_obj.c.2-1 sr-1_obj.c.2-2","drafted"
-"sr-1","2","Where does this system need supply chain rules that the organization's policy doesn't cover?","sr-1_obj.a.1.a-2","drafted"
+"sr-1","1","Which supply chain risk policy and procedures govern this system, who owns them, and when were they last reviewed?","sr-1_obj.a-1 sr-1_obj.a-2 sr-1_obj.a-3 sr-1_obj.a-4 sr-1_obj.a.1.a-1 sr-1_obj.a.1.a-2 sr-1_obj.a.1.a-3 sr-1_obj.a.1.a-4 sr-1_obj.a.1.a-5 sr-1_obj.a.1.a-6 sr-1_obj.a.1.a-7 sr-1_obj.a.1.b sr-1_obj.b sr-1_obj.c.1-1 sr-1_obj.c.1-2 sr-1_obj.c.2-1 sr-1_obj.c.2-2","reviewed"
+"sr-1","2","Where does this system need supply chain rules that the organization's policy doesn't cover?","sr-1_obj.a.1.a-2","reviewed"
 "sr-2","1","Which supply chain risks does this system face, from design and build through delivery, running, and disposal, and where is that plan kept?","sr-2_obj.a-1 sr-2_obj.a-2 sr-2_obj.a-3 sr-2_obj.a-4 sr-2_obj.a-5 sr-2_obj.a-6 sr-2_obj.a-7 sr-2_obj.a-8 sr-2_obj.a-9","drafted"
 "sr-2","2","How often is this system's supply chain plan updated, and who can read or change it?","sr-2_obj.b sr-2_obj.c-1 sr-2_obj.c-2","drafted"
 "sr-2.1","1","Who leads supply chain risk work for this system, and which roles from purchasing, security, and engineering take part?","sr-2.1_obj","drafted"

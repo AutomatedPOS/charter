@@ -1,6 +1,6 @@
 "control_id","q","question","covers","status"
-"ir-1","1","Which incident response policy and procedures govern this system, who owns them, and when were they last reviewed?","ir-1_obj.a-1 ir-1_obj.a-2 ir-1_obj.a-3 ir-1_obj.a-4 ir-1_obj.a.1.a-1 ir-1_obj.a.1.a-2 ir-1_obj.a.1.a-3 ir-1_obj.a.1.a-4 ir-1_obj.a.1.a-5 ir-1_obj.a.1.a-6 ir-1_obj.a.1.a-7 ir-1_obj.a.1.b ir-1_obj.b ir-1_obj.c.1-1 ir-1_obj.c.1-2 ir-1_obj.c.2-1 ir-1_obj.c.2-2","drafted"
-"ir-1","2","Where does this system need incident response rules that the organization's policy doesn't cover?","ir-1_obj.a.1.a-2","drafted"
+"ir-1","1","Which incident response policy and procedures govern this system, who owns them, and when were they last reviewed?","ir-1_obj.a-1 ir-1_obj.a-2 ir-1_obj.a-3 ir-1_obj.a-4 ir-1_obj.a.1.a-1 ir-1_obj.a.1.a-2 ir-1_obj.a.1.a-3 ir-1_obj.a.1.a-4 ir-1_obj.a.1.a-5 ir-1_obj.a.1.a-6 ir-1_obj.a.1.a-7 ir-1_obj.a.1.b ir-1_obj.b ir-1_obj.c.1-1 ir-1_obj.c.1-2 ir-1_obj.c.2-1 ir-1_obj.c.2-2","reviewed"
+"ir-1","2","Where does this system need incident response rules that the organization's policy doesn't cover?","ir-1_obj.a.1.a-2","reviewed"
 "ir-2","1","Who handles incidents for this system, what training do they get before taking the role and after major changes, and how often is it refreshed?","ir-2_obj.a.1 ir-2_obj.a.2 ir-2_obj.a.3 ir-2_obj.b-1 ir-2_obj.b-2","drafted"
 "ir-2.1","1","What simulated incidents do this system's responders practice on, so they know what to do under pressure?","ir-2.1_obj","drafted"
 "ir-2.2","1","What automated training environment lets this system's responders practice, such as a range or replica of the system?","ir-2.2_obj","drafted"
