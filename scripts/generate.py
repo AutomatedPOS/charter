@@ -1,7 +1,7 @@
 """Build one arc42 package per profile into build/.
 
 Each package holds START-HERE.md, the twelve arc42 chapter files with control
-blocks, README.md and AGENTS.md, and is zipped as build/<package>.zip.
+blocks, README.md, AGENTS.md and questions.csv, and is zipped as build/<package>.zip.
 START-HERE.md is also written to the repo root.
 
 Base baseline and overlay are resolved separately with trestle and merged here:
@@ -276,6 +276,7 @@ def control_block(c, ctx, level):
     lines = [f'<!-- charter:control id="{cid}" profile="{ctx["name"]}" -->',
              f'{"#" * level} {c["title"]}  `{c["label"]}`  {ctx["tags"](cid)}'.rstrip(), '']
     lines += ask_lines(ctx['questions'][cid]) + ['']
+    ctx['asked'] += len(ctx['questions'][cid])
     for note in ctx['notes'].get(cid, []):
         lines += [f'**Consider ({ctx["overlay"]["tag"]}):** {note}', '']
     if cid in ctx['privacy_added']:
@@ -301,6 +302,7 @@ def family_block(family, members_list, ctx):
         qs = ctx['questions'][cid]
         lines.append(f'- `{c["label"]}` {c["title"]} {ctx["tags"](cid)}: {qs[0]}'.replace('  ', ' '))
         lines += [f'  {q}' for q in qs[1:]]
+        ctx['asked'] += len(qs)
         for note in ctx['notes'].get(cid, []):
             lines.append(f'  - Consider ({ctx["overlay"]["tag"]}): {note}')
         if cid in ctx['privacy_added']:
@@ -309,6 +311,14 @@ def family_block(family, members_list, ctx):
             lines.append(f'  - From START-HERE: {", ".join(ctx["from_start"][cid])}')
     lines += [''] + answer_fields() + ['<!-- /charter:family -->', '']
     return lines
+
+
+def by_family(placed, ctx):
+    """A chapter's placed controls grouped by family, in the order the chapter renders them."""
+    groups = {}
+    for c, mode, gate in placed:
+        groups.setdefault(c['family'], []).append((c, mode, gate))
+    return [(f, groups[f]) for f in sorted(groups, key=lambda f: list(ctx['families']).index(f))]
 
 
 def render_chapter(number, title, placed, ctx):
@@ -341,11 +351,7 @@ def render_chapter(number, title, placed, ctx):
 
     if placed:
         lines += ['## Security controls', '']
-        by_family = {}
-        for c, mode, gate in placed:
-            by_family.setdefault(c['family'], []).append((c, mode, gate))
-        for family in sorted(by_family, key=lambda f: list(ctx['families']).index(f)):
-            rows = by_family[family]
+        for family, rows in by_family(placed, ctx):
             lines += [f'### {ctx["families"][family]}', '']
             if rows[0][2] == 'pii':
                 lines += [f'Answer this family only if START-HERE {PRIVACY_ID} names personal information. '
@@ -356,6 +362,48 @@ def render_chapter(number, title, placed, ctx):
             for c, _, _ in rows:
                 lines += control_block(c, ctx, 5 if '.' in c['id'] else 4)
     return '\n'.join(lines).rstrip() + '\n'
+
+
+# ---------- question export ----------
+
+CSV_COLUMNS = ['profile', 'question_id', 'arc42_section', 'control_ids', 'question',
+               'consideration_type', 'consideration', 'answer', 'owner', 'notes']
+
+
+def question_rows(chapters, ctx):
+    """One row per question: START-HERE first, then chapters 1 to 12 in rendered order.
+
+    Returns (rows, control_rows)."""
+    name, controls = ctx['name'], ctx['controls']
+    rows = []
+    for it in ctx['start_here']:
+        labels = list(dict.fromkeys(controls[cid]['label'] for cid, _ in it['prefill_ids']))
+        section = f'START-HERE (ch {", ".join(str(c) for c in it["chapters"])})'
+        rows.append([name, it['id'], section, '; '.join(labels), it['question'], '', '', '', '', ''])
+    control_rows = 0
+    for n, (_, title) in enumerate(CHAPTERS, 1):
+        for _, family_rows in by_family(chapters[n], ctx):
+            for c, _, _ in family_rows:
+                cid = c['id']
+                types, notes = [], []
+                if cid in ctx['notes']:
+                    types.append(ctx['overlay']['tag'])
+                    notes += ctx['notes'][cid]
+                if cid in ctx['privacy_added']:
+                    types.append('Privacy')
+                    notes.append(PRIVACY_NOTE)
+                for q, question in enumerate(ctx['questions'][cid], 1):
+                    rows.append([name, f'{cid} q{q}', f'{n} {title}', c['label'], question,
+                                 '; '.join(types), ' | '.join(notes), '', '', ''])
+                    control_rows += 1
+    return rows, control_rows
+
+
+def write_questions_csv(path, rows):
+    with path.open('w', newline='', encoding='utf-8-sig') as f:
+        w = csv.writer(f, quoting=csv.QUOTE_ALL)
+        w.writerow(CSV_COLUMNS)
+        w.writerows(rows)
 
 
 # ---------- package text ----------
@@ -403,7 +451,9 @@ def render_readme(ctx):
     lines += ['## Files', '',
               '- `START-HERE.md`: answer first.',
               '- `01_` to `12_`: the twelve arc42 chapters, with control blocks.',
-              '- `AGENTS.md`: instructions for an AI assistant working this package.', '',
+              '- `AGENTS.md`: instructions for an AI assistant working this package.',
+              '- `questions.csv`: the same questions as a spreadsheet, one row per question. Answer in either '
+              'place.', '',
               '## arc42', '', ARC42_CREDIT, '']
     return '\n'.join(lines)
 
@@ -424,7 +474,8 @@ def render_agents(ctx):
         f'- Origination is one of: {", ".join(ORIGINATION_VALUES)}.',
         '- Answer state is `answered`, or `parked: <who it is waiting on>`.',
         '- Every block needs an answer or a parked note.',
-        '- Organization-level (PM) controls are answered outside this document.', ''])
+        '- Organization-level (PM) controls are answered outside this document.',
+        '- Answers may also come back in `questions.csv`, keyed by `question_id`.', ''])
 
 
 # ---------- build ----------
@@ -513,8 +564,14 @@ def main():
                     shutil.rmtree(folder)
                 folder.mkdir()
                 (folder / 'START-HERE.md').write_text(render_start_here(start_here, controls), encoding='utf-8')
+                ctx['asked'] = 0
                 for n, (stem, title) in enumerate(CHAPTERS, 1):
                     (folder / f'{stem}.md').write_text(render_chapter(n, title, chapters[n], ctx), encoding='utf-8')
+                rows, control_rows = question_rows(chapters, ctx)
+                if control_rows != ctx['asked']:
+                    raise SystemExit(f'{name}: questions.csv has {control_rows} control questions, '
+                                     f'chapters render {ctx["asked"]}')
+                write_questions_csv(folder / 'questions.csv', rows)
                 (folder / 'README.md').write_text(render_readme(ctx), encoding='utf-8')
                 (folder / 'AGENTS.md').write_text(render_agents(ctx), encoding='utf-8')
                 target = BUILD / f'{name}.zip'
@@ -522,7 +579,8 @@ def main():
                 added_pm = sum(c in ctx['pm'] for c in privacy_added)
                 print(f'{name}: {len(selected)} controls, {placed} in chapters, {len(ctx["pm"])} PM, '
                       f'{len(notes)} with overlay notes, privacy adds {len(privacy_added)} '
-                      f'({len(privacy_added) - added_pm} in chapters, {added_pm} PM), {target.stat().st_size} bytes')
+                      f'({len(privacy_added) - added_pm} in chapters, {added_pm} PM), '
+                      f'questions.csv {len(rows)} rows, {target.stat().st_size} bytes')
 
 
 if __name__ == '__main__':

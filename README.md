@@ -13,6 +13,8 @@ Status: early. Nothing to run yet.
 3. Each chapter that has controls gets a `### Security controls` section at the bottom.
 4. Answer the questions in place. Rerunning `attach` refreshes the questions and keeps your answers.
 
+Each package also has `questions.csv`: every question as one spreadsheet row, keyed by `question_id`, for working through in a spreadsheet or a workshop.
+
 Charter works with any OSCAL catalog, not only 800-53.
 
 ## Sources
