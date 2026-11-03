@@ -385,10 +385,9 @@ def question_rows(chapters, ctx):
         for _, family_rows in by_family(chapters[n], ctx):
             for c, _, _ in family_rows:
                 cid = c['id']
-                types, notes = [], []
-                if cid in ctx['notes']:
+                types, notes = [], list(ctx['notes'].get(cid, []))
+                if ctx['overlay'] and (cid in ctx['notes'] or cid in ctx['overlay_added']):
                     types.append(ctx['overlay']['tag'])
-                    notes += ctx['notes'][cid]
                 if cid in ctx['privacy_added']:
                     types.append('Privacy')
                     notes.append(PRIVACY_NOTE)
@@ -544,6 +543,7 @@ def main():
                        'removed': sorted(base_ids - selected, key=order.__getitem__),
                        'privacy_added': privacy_added}
                 overlay_added = package_ids - base_ids
+                ctx['overlay_added'] = overlay_added
                 ctx['tags'] = lambda cid, overlay_added=overlay_added: tags(cid, members, overlay, notes, overlay_added)
                 ctx['see_also'] = lambda c, selected=selected: see_also(c, selected, controls, place)
 
